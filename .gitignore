@@ -8,6 +8,7 @@ __pycache__/
 
 # Distribution / packaging
 .Python
+MCdata/
 build/
 develop-eggs/
 dist/
