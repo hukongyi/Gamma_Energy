@@ -9,6 +9,9 @@ __pycache__/
 # Distribution / packaging
 .Python
 MCdata/
+AutogluonModels/
+prediction-MC_Energy-2023_03_16T19_25_55_531Z/
+Exptdata/
 build/
 develop-eggs/
 dist/
