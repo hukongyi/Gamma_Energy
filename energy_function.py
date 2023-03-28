@@ -2,6 +2,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import os
+from tabulate import tabulate
+
 
 MCprihist = np.load("/home2/hky/github/Gamma_Energy/MCdata/priEvent.npy")
 MCprihist_new = MCprihist[:-2]
@@ -108,7 +110,7 @@ def getAngleDistance(theta, phi, pritheta, priphi):
     return np.rad2deg(np.arccos(np.sin(np.deg2rad(theta))*np.sin(np.deg2rad(pritheta))*np.cos(np.deg2rad(priphi-phi))+np.cos(np.deg2rad(theta))*np.cos(np.deg2rad(pritheta))))
 
 
-def get_eta(energy_pred, sectheta, sumpf, theta, phi, pritheta, priphi, test_size):
+def get_eta(energy_pred, sumpf, theta, phi, pritheta, priphi, test_size):
     energy_pred = energy_pred.reshape(-1)
     AngleDistance = getAngleDistance(theta, phi, pritheta, priphi)
     WindowsSize = getWindowsSize(sumpf)
@@ -117,7 +119,7 @@ def get_eta(energy_pred, sectheta, sumpf, theta, phi, pritheta, priphi, test_siz
     for i in range(7):
         indices = np.where((energy_pred > bins[i]) & (
             energy_pred < bins[i+1]) & (AngleDistance < WindowsSize))
-        MCafterhist[i] = np.sum(1/sectheta[indices])
+        MCafterhist[i] = indices[0].shape[0]
     eta = MCafterhist/MCprihist_new
     return eta/test_size
 
@@ -217,27 +219,42 @@ def GetOnOff(Exptdata, ExptEnergy):
     return On, Off
 
 
-def GetSpectrum(Exptdata, ExptEnergy, energy_pred, sectheta, sumpf, theta, phi, pritheta, priphi, test_size, savepath):
+def GetSpectrum(Exptdata, ExptEnergy, energy_pred, energy_orgin, sectheta, sumpf, theta, phi, pritheta, priphi, test_size, savepath):
+    my_data = list()
     On, Off = GetOnOff(Exptdata, ExptEnergy)
-    print(On)
-    print(Off)
     over = On-Off*0.05
-    rate = get_eta(energy_pred, sectheta, sumpf, theta,
-                   phi, pritheta, priphi, test_size)
-    Spectrum = over / 176.158 / 24 / 60 / 60 / rate / \
+    rate_pred = get_eta(energy_pred,  sumpf, theta,
+                        phi, pritheta, priphi, test_size)
+
+    rate_orgin = get_eta(energy_orgin,  sumpf, theta,
+                         phi, pritheta, priphi, test_size)
+
+    Spectrum_pred = over / 176.158 / 24 / 60 / 60 / rate_pred / \
         (30000 * 30000 * 3.1415926) / \
         (10**bins_3[1:]-10**bins_3[:-1])*(10**bins_3_center)**2
-    Spectrum_err = np.sqrt(over) / 176.158 / 24 / 60 / 60 / rate / \
+    Spectrum_pred_err = np.sqrt(over) / 176.158 / 24 / 60 / 60 / rate_pred / \
         (30000 * 30000 * 3.1415926) / \
         (10**bins_3[1:]-10**bins_3[:-1])*(10**bins_3_center)**2
+
+    Spectrum_orgin = over / 176.158 / 24 / 60 / 60 / rate_orgin / \
+        (30000 * 30000 * 3.1415926) / \
+        (10**bins_3[1:]-10**bins_3[:-1])*(10**bins_3_center)**2
+    Spectrum_orgin_err = np.sqrt(over) / 176.158 / 24 / 60 / 60 / rate_orgin / \
+        (30000 * 30000 * 3.1415926) / \
+        (10**bins_3[1:]-10**bins_3[:-1])*(10**bins_3_center)**2
+    for i in range(len(On)):
+        my_data.append([bins_3[i], bins_3[i+1], On[i], Off[i],
+                       over[i], rate_pred[i], Spectrum_pred[i], rate_orgin[i], Spectrum_orgin[i]])
     prl_E = [10.69, 17.91, 30, 49, 75, 140, 350]
     prl_Spectrum = [8.5e-12, 6e-12, 4e-12, 2.1e-12, 1.4e-12, 4.8e-13, 2.18e-13]
     prl_err = [1e-12, 1e-12, 0.4e-12, 0.3e-12, 0.2e-12, 1.4e-13, 1.35e-13]
     plt.errorbar(prl_E, prl_Spectrum, prl_err, label="prl", fmt="o")
-    print(10**bins_3_center, Spectrum,
-          Spectrum_err, )
-    plt.errorbar(10**bins_3_center, Spectrum,
-                 Spectrum_err, label="this work", fmt="o")
+    # print(10**bins_3_center, Spectrum,
+    #       Spectrum_err, )
+    plt.errorbar(10**bins_3_center, Spectrum_pred,
+                 Spectrum_pred_err, label="this work(pred energy)", fmt="o")
+    plt.errorbar(10**bins_3_center, Spectrum_orgin,
+                 Spectrum_orgin_err, label="this work(orgin energy)", fmt="o")
     plt.xscale("log")
     plt.yscale("log")
     plt.xlabel("E(TeV)")
@@ -245,6 +262,9 @@ def GetSpectrum(Exptdata, ExptEnergy, energy_pred, sectheta, sumpf, theta, phi, 
     plt.legend()
     plt.savefig(os.path.join(savepath, "EnergySpectrum.png"))
     plt.show()
+    head = ["Energy min", "Energy max", "On", "Off", "Over",
+            "rate_pred", "Spectrum_pred", "rate_orgin", "Spectrum_orgin"]
+    print(tabulate(my_data, headers=head, tablefmt="grid", floatfmt=[".2f",".2f",".2f",".2f",".2f",".4f",".4e",".4f",".4e"]))
 
 
 def draw_precision():
