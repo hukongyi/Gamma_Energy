@@ -1,13 +1,13 @@
 from autogluon.tabular import TabularDataset, TabularPredictor
-import uproot
+# import uproot
 import os
 import numpy as np
-import pandas as pd
-from sklearn.model_selection import train_test_split
+# import pandas as pd
+# from sklearn.model_selection import train_test_split
 from ALLSKY_energy_function import *
 from getS50 import *
-from draw_compare_multiply import draw_compare_multiply
-from sklearn.preprocessing import PowerTransformer
+# from draw_compare_multiply import draw_compare_multiply
+# from sklearn.preprocessing import PowerTransformer
 
 
 # file = uproot.open("/home2/chenxu/data/gamma_all.root")
@@ -38,7 +38,7 @@ from sklearn.preprocessing import PowerTransformer
 
 
 # cuted = np.where((theta < 60) & (nch >= 16) & (
-#     inout == 1) & (age > 0.31) & (age < 1.59) & (sigma < 1))
+#     inout == 1) & (age > 0.31) & (age < 1.59) & (sigma < 1) & (ne > 1e4))
 
 # nch = nch[cuted]
 # theta = theta[cuted]
@@ -152,9 +152,9 @@ mkdir(tmpsavepath)
 
 train_data_autogluon = TabularDataset(
     "/home2/hky/github/Gamma_Energy/AllSky/MC_train_AllSky_Data_transformed.csv")
-time_limit = 9*60*60
+time_limit = 24*60*60
 predictor = TabularPredictor(label="log_energy").fit(
-    train_data_autogluon, time_limit=time_limit, num_cpus=80, num_gpus=2,presets="high_quality")
+    train_data_autogluon, time_limit=time_limit, num_gpus=2, presets="high_quality")
 # predictor = TabularPredictor.load("/home2/hky/github/Gamma_Energy/AllSky/AutogluonModels/ag-20230327_164904")
 test_data_autogluon = TabularDataset(
     "/home2/hky/github/Gamma_Energy/AllSky/MC_test_AllSky_Data_transformed.csv")
@@ -165,4 +165,4 @@ energy_orgin = 10**test_data_autogluon["log_energy"].to_numpy()
 check_fit(energy_pred, energy_orgin, method, tmpsavepath)
 
 # draw_precision()
-np.save("/home2/hky/github/Gamma_Energy/AllSky/precision_ALLSKY_sigma<1.npy", precision)
+np.save("/home2/hky/github/Gamma_Energy/AllSky/precision_ALLSKY_sigma<1_ne>1e4.npy", precision)

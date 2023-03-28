@@ -6,7 +6,7 @@ import os
 
 # precision = dict()
 precision = np.load(
-    "/home2/hky/github/Gamma_Energy/AllSky/precision_ALLSKY_sigma<1.npy", allow_pickle=True).item()
+    "/home2/hky/github/Gamma_Energy/AllSky/precision_ALLSKY_sigma<1_ne>1e4.npy", allow_pickle=True).item()
 Energy_bin = np.logspace(0.6, 4.6, 21)
 Energy_bin_center = 10**((np.log10(Energy_bin[:-1]) +
                          np.log10(Energy_bin[1:]))/2)
@@ -30,12 +30,13 @@ def check_fit(energy_pred, energy_orgin, title, savepath):
                         & (Energy_max[i] > energy_pred))
         need_draw = np.log(energy_pred[need]/energy_orgin[need])
         precision_.append(np.sqrt(np.mean(need_draw**2)))
-        axes[i].hist(need_draw, bins=bins_1, density=True)
-        axes[i].set_title(
-            f"{Energy_min[i]:.2f}<E_pred<{Energy_max[i]:.2f}", fontsize=10)
-        axes[i].set_ylim(0, 4)
-        axes[i].text(-2, 3,
-                     f"error={np.sqrt(np.mean(need_draw**2)):.2f}\nstd={np.std(need_draw):.2f}\nmean={np.mean(need_draw):.2f}\n")
+        if need_draw.size != 0:
+            axes[i].hist(need_draw, bins=bins_1, density=True)
+            axes[i].set_title(
+                f"{Energy_min[i]:.2f}<E_pred<{Energy_max[i]:.2f}", fontsize=10)
+            axes[i].set_ylim(0, 4)
+            axes[i].text(-2, 3,
+                        f"error={np.sqrt(np.mean(need_draw**2)):.2f}\nstd={np.std(need_draw):.2f}\nmean={np.mean(need_draw):.2f}\n")
     plt.xlabel("ln(pred/true)")
     mkdir(savepath)
     plt.savefig(os.path.join(savepath, "resolution.png"))
