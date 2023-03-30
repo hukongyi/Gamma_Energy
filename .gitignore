@@ -5,11 +5,15 @@ __pycache__/
 .vscode/
 # C extensions
 *.so
-
+*.root
+*.npy
+*.npz
+*.out
 # Distribution / packaging
 .Python
 MCdata/
 AutogluonModels/
+log10Energy/
 prediction-MC_Energy-2023_03_16T19_25_55_531Z/
 Exptdata/
 build/

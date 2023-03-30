@@ -46,3 +46,1510 @@ Fitting model: KNeighborsUnif_BAG_L1 ... Training model for up to 57584.04s of t
 	5.33s	 = Training   runtime
 	296.15s	 = Validation runtime
 Fitting model: KNeighborsDist_BAG_L1 ... Training model for up to 57280.06s of the 86093.68s of remaining time.
+	-0.1646	 = Validation score   (-root_mean_squared_error)
+	5.38s	 = Training   runtime
+	331.49s	 = Validation runtime
+Fitting model: LightGBMXT_BAG_L1 ... Training model for up to 56940.91s of the 85754.53s of remaining time.
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1404	 = Validation score   (-root_mean_squared_error)
+	234.42s	 = Training   runtime
+	406.66s	 = Validation runtime
+Fitting model: LightGBM_BAG_L1 ... Training model for up to 56652.65s of the 85466.27s of remaining time.
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.14	 = Validation score   (-root_mean_squared_error)
+	136.77s	 = Training   runtime
+	97.41s	 = Validation runtime
+Fitting model: RandomForestMSE_BAG_L1 ... Training model for up to 56499.95s of the 85313.57s of remaining time.
+	-0.1458	 = Validation score   (-root_mean_squared_error)
+	96.53s	 = Training   runtime
+	29.79s	 = Validation runtime
+Fitting model: CatBoost_BAG_L1 ... Training model for up to 56368.01s of the 85181.63s of remaining time.
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1407	 = Validation score   (-root_mean_squared_error)
+	178.77s	 = Training   runtime
+	0.44s	 = Validation runtime
+Fitting model: ExtraTreesMSE_BAG_L1 ... Training model for up to 56185.26s of the 84998.88s of remaining time.
+	-0.147	 = Validation score   (-root_mean_squared_error)
+	37.31s	 = Training   runtime
+	29.23s	 = Validation runtime
+Fitting model: NeuralNetFastAI_BAG_L1 ... Training model for up to 56112.6s of the 84926.22s of remaining time.
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1474	 = Validation score   (-root_mean_squared_error)
+	636.96s	 = Training   runtime
+	4.97s	 = Validation runtime
+Fitting model: XGBoost_BAG_L1 ... Training model for up to 55471.2s of the 84284.82s of remaining time.
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1404	 = Validation score   (-root_mean_squared_error)
+	54.34s	 = Training   runtime
+	8.98s	 = Validation runtime
+Fitting model: NeuralNetTorch_BAG_L1 ... Training model for up to 55412.02s of the 84225.64s of remaining time.
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1667	 = Validation score   (-root_mean_squared_error)
+	812.41s	 = Training   runtime
+	1.28s	 = Validation runtime
+Fitting model: LightGBMLarge_BAG_L1 ... Training model for up to 54596.16s of the 83409.78s of remaining time.
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.14	 = Validation score   (-root_mean_squared_error)
+	141.81s	 = Training   runtime
+	44.63s	 = Validation runtime
+Repeating k-fold bagging: 2/20
+Fitting model: LightGBMXT_BAG_L1 ... Training model for up to 54446.08s of the 83259.7s of remaining time.
+	Fitting 8 child models (S2F1 - S2F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.14	 = Validation score   (-root_mean_squared_error)
+	448.37s	 = Training   runtime
+	886.89s	 = Validation runtime
+Fitting model: LightGBM_BAG_L1 ... Training model for up to 54158.83s of the 82972.45s of remaining time.
+	Fitting 8 child models (S2F1 - S2F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1396	 = Validation score   (-root_mean_squared_error)
+	263.59s	 = Training   runtime
+	158.09s	 = Validation runtime
+Fitting model: CatBoost_BAG_L1 ... Training model for up to 54022.51s of the 82836.13s of remaining time.
+	Fitting 8 child models (S2F1 - S2F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1406	 = Validation score   (-root_mean_squared_error)
+	340.87s	 = Training   runtime
+	0.93s	 = Validation runtime
+Fitting model: NeuralNetFastAI_BAG_L1 ... Training model for up to 53856.73s of the 82670.35s of remaining time.
+	Fitting 8 child models (S2F1 - S2F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1446	 = Validation score   (-root_mean_squared_error)
+	1211.83s	 = Training   runtime
+	9.85s	 = Validation runtime
+Fitting model: XGBoost_BAG_L1 ... Training model for up to 53277.97s of the 82091.59s of remaining time.
+	Fitting 8 child models (S2F1 - S2F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.14	 = Validation score   (-root_mean_squared_error)
+	112.53s	 = Training   runtime
+	18.85s	 = Validation runtime
+Fitting model: NeuralNetTorch_BAG_L1 ... Training model for up to 53214.66s of the 82028.28s of remaining time.
+	Fitting 8 child models (S2F1 - S2F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1652	 = Validation score   (-root_mean_squared_error)
+	1502.02s	 = Training   runtime
+	2.55s	 = Validation runtime
+Fitting model: LightGBMLarge_BAG_L1 ... Training model for up to 52521.74s of the 81335.36s of remaining time.
+	Fitting 8 child models (S2F1 - S2F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1397	 = Validation score   (-root_mean_squared_error)
+	281.12s	 = Training   runtime
+	93.53s	 = Validation runtime
+Repeating k-fold bagging: 3/20
+Fitting model: LightGBMXT_BAG_L1 ... Training model for up to 52374.4s of the 81188.02s of remaining time.
+	Fitting 8 child models (S3F1 - S3F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1398	 = Validation score   (-root_mean_squared_error)
+	661.06s	 = Training   runtime
+	1368.02s	 = Validation runtime
+Fitting model: LightGBM_BAG_L1 ... Training model for up to 52091.14s of the 80904.76s of remaining time.
+	Fitting 8 child models (S3F1 - S3F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1395	 = Validation score   (-root_mean_squared_error)
+	399.64s	 = Training   runtime
+	216.8s	 = Validation runtime
+Fitting model: CatBoost_BAG_L1 ... Training model for up to 51946.33s of the 80759.95s of remaining time.
+	Fitting 8 child models (S3F1 - S3F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1405	 = Validation score   (-root_mean_squared_error)
+	535.55s	 = Training   runtime
+	1.33s	 = Validation runtime
+Fitting model: NeuralNetFastAI_BAG_L1 ... Training model for up to 51747.88s of the 80561.5s of remaining time.
+	Fitting 8 child models (S3F1 - S3F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1436	 = Validation score   (-root_mean_squared_error)
+	1824.23s	 = Training   runtime
+	14.68s	 = Validation runtime
+Fitting model: XGBoost_BAG_L1 ... Training model for up to 51131.22s of the 79944.84s of remaining time.
+	Fitting 8 child models (S3F1 - S3F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1398	 = Validation score   (-root_mean_squared_error)
+	164.25s	 = Training   runtime
+	26.39s	 = Validation runtime
+Fitting model: NeuralNetTorch_BAG_L1 ... Training model for up to 51074.82s of the 79888.44s of remaining time.
+	Fitting 8 child models (S3F1 - S3F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1646	 = Validation score   (-root_mean_squared_error)
+	2240.83s	 = Training   runtime
+	3.84s	 = Validation runtime
+Fitting model: LightGBMLarge_BAG_L1 ... Training model for up to 50332.8s of the 79146.42s of remaining time.
+	Fitting 8 child models (S3F1 - S3F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1396	 = Validation score   (-root_mean_squared_error)
+	403.74s	 = Training   runtime
+	138.64s	 = Validation runtime
+Repeating k-fold bagging: 4/20
+Fitting model: LightGBMXT_BAG_L1 ... Training model for up to 50201.85s of the 79015.47s of remaining time.
+	Fitting 8 child models (S4F1 - S4F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1398	 = Validation score   (-root_mean_squared_error)
+	896.63s	 = Training   runtime
+	1807.38s	 = Validation runtime
+Fitting model: LightGBM_BAG_L1 ... Training model for up to 49915.56s of the 78729.18s of remaining time.
+	Fitting 8 child models (S4F1 - S4F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1394	 = Validation score   (-root_mean_squared_error)
+	541.68s	 = Training   runtime
+	278.1s	 = Validation runtime
+Fitting model: CatBoost_BAG_L1 ... Training model for up to 49763.88s of the 78577.5s of remaining time.
+	Fitting 8 child models (S4F1 - S4F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1405	 = Validation score   (-root_mean_squared_error)
+	726.6s	 = Training   runtime
+	1.72s	 = Validation runtime
+Fitting model: NeuralNetFastAI_BAG_L1 ... Training model for up to 49568.97s of the 78382.59s of remaining time.
+	Fitting 8 child models (S4F1 - S4F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1433	 = Validation score   (-root_mean_squared_error)
+	2399.67s	 = Training   runtime
+	19.57s	 = Validation runtime
+Fitting model: XGBoost_BAG_L1 ... Training model for up to 48988.96s of the 77802.58s of remaining time.
+	Fitting 8 child models (S4F1 - S4F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1398	 = Validation score   (-root_mean_squared_error)
+	219.9s	 = Training   runtime
+	35.43s	 = Validation runtime
+Fitting model: NeuralNetTorch_BAG_L1 ... Training model for up to 48913.02s of the 77726.64s of remaining time.
+	Fitting 8 child models (S4F1 - S4F8) | Fitting with ParallelLocalFoldFittingStrategy
+ 	-0.1649	 = Validation score   (-root_mean_squared_error)
+	3073.53s	 = Training   runtime
+	5.11s	 = Validation runtime
+Fitting model: LightGBMLarge_BAG_L1 ... Training model for up to 48066.69s of the 76880.31s of remaining time.
+	Fitting 8 child models (S4F1 - S4F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1395	 = Validation score   (-root_mean_squared_error)
+	538.26s	 = Training   runtime
+	190.53s	 = Validation runtime
+Repeating k-fold bagging: 5/20
+Fitting model: LightGBMXT_BAG_L1 ... Training model for up to 47902.64s of the 76716.26s of remaining time.
+	Fitting 8 child models (S5F1 - S5F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1397	 = Validation score   (-root_mean_squared_error)
+	1130.61s	 = Training   runtime
+	2196.25s	 = Validation runtime
+Fitting model: LightGBM_BAG_L1 ... Training model for up to 47617.82s of the 76431.44s of remaining time.
+	Fitting 8 child models (S5F1 - S5F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1394	 = Validation score   (-root_mean_squared_error)
+	690.91s	 = Training   runtime
+	345.1s	 = Validation runtime
+Fitting model: CatBoost_BAG_L1 ... Training model for up to 47442.9s of the 76256.52s of remaining time.
+	Fitting 8 child models (S5F1 - S5F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1404	 = Validation score   (-root_mean_squared_error)
+	902.0s	 = Training   runtime
+	2.13s	 = Validation runtime
+Fitting model: NeuralNetFastAI_BAG_L1 ... Training model for up to 47243.37s of the 76056.99s of remaining time.
+	Fitting 8 child models (S5F1 - S5F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.143	 = Validation score   (-root_mean_squared_error)
+	3052.91s	 = Training   runtime
+	24.62s	 = Validation runtime
+Fitting model: XGBoost_BAG_L1 ... Training model for up to 46584.94s of the 75398.56s of remaining time.
+	Fitting 8 child models (S5F1 - S5F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1397	 = Validation score   (-root_mean_squared_error)
+	272.36s	 = Training   runtime
+	42.54s	 = Validation runtime
+Fitting model: NeuralNetTorch_BAG_L1 ... Training model for up to 46510.67s of the 75324.29s of remaining time.
+	Fitting 8 child models (S5F1 - S5F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1643	 = Validation score   (-root_mean_squared_error)
+	3822.38s	 = Training   runtime
+	6.37s	 = Validation runtime
+Fitting model: LightGBMLarge_BAG_L1 ... Training model for up to 45753.1s of the 74566.72s of remaining time.
+	Fitting 8 child models (S5F1 - S5F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1395	 = Validation score   (-root_mean_squared_error)
+	674.66s	 = Training   runtime
+	235.42s	 = Validation runtime
+Repeating k-fold bagging: 6/20
+Fitting model: LightGBMXT_BAG_L1 ... Training model for up to 45587.76s of the 74401.38s of remaining time.
+	Fitting 8 child models (S6F1 - S6F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1397	 = Validation score   (-root_mean_squared_error)
+	1351.84s	 = Training   runtime
+	2618.08s	 = Validation runtime
+Fitting model: LightGBM_BAG_L1 ... Training model for up to 45299.68s of the 74113.3s of remaining time.
+	Fitting 8 child models (S6F1 - S6F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1394	 = Validation score   (-root_mean_squared_error)
+	855.16s	 = Training   runtime
+	409.64s	 = Validation runtime
+Fitting model: CatBoost_BAG_L1 ... Training model for up to 45108.73s of the 73922.35s of remaining time.
+	Fitting 8 child models (S6F1 - S6F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1404	 = Validation score   (-root_mean_squared_error)
+	1103.84s	 = Training   runtime
+	2.6s	 = Validation runtime
+Fitting model: NeuralNetFastAI_BAG_L1 ... Training model for up to 44885.0s of the 73698.62s of remaining time.
+	Fitting 8 child models (S6F1 - S6F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1428	 = Validation score   (-root_mean_squared_error)
+	3699.69s	 = Training   runtime
+	29.59s	 = Validation runtime
+Fitting model: XGBoost_BAG_L1 ... Training model for up to 44217.83s of the 73031.45s of remaining time.
+	Fitting 8 child models (S6F1 - S6F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1397	 = Validation score   (-root_mean_squared_error)
+	327.61s	 = Training   runtime
+	50.0s	 = Validation runtime
+Fitting model: NeuralNetTorch_BAG_L1 ... Training model for up to 44138.79s of the 72952.41s of remaining time.
+	Fitting 8 child models (S6F1 - S6F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1642	 = Validation score   (-root_mean_squared_error)
+	4661.33s	 = Training   runtime
+	7.64s	 = Validation runtime
+Fitting model: LightGBMLarge_BAG_L1 ... Training model for up to 43289.58s of the 72103.2s of remaining time.
+	Fitting 8 child models (S6F1 - S6F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1394	 = Validation score   (-root_mean_squared_error)
+	814.22s	 = Training   runtime
+	282.07s	 = Validation runtime
+Repeating k-fold bagging: 7/20
+Fitting model: LightGBMXT_BAG_L1 ... Training model for up to 43121.25s of the 71934.87s of remaining time.
+	Fitting 8 child models (S7F1 - S7F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1397	 = Validation score   (-root_mean_squared_error)
+	1596.38s	 = Training   runtime
+	2995.57s	 = Validation runtime
+Fitting model: LightGBM_BAG_L1 ... Training model for up to 42830.27s of the 71643.89s of remaining time.
+	Fitting 8 child models (S7F1 - S7F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1394	 = Validation score   (-root_mean_squared_error)
+	997.99s	 = Training   runtime
+	485.55s	 = Validation runtime
+Fitting model: CatBoost_BAG_L1 ... Training model for up to 42655.68s of the 71469.3s of remaining time.
+	Fitting 8 child models (S7F1 - S7F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1404	 = Validation score   (-root_mean_squared_error)
+	1296.7s	 = Training   runtime
+	3.01s	 = Validation runtime
+Fitting model: NeuralNetFastAI_BAG_L1 ... Training model for up to 42440.53s of the 71254.15s of remaining time.
+	Fitting 8 child models (S7F1 - S7F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1427	 = Validation score   (-root_mean_squared_error)
+	4327.19s	 = Training   runtime
+	34.43s	 = Validation runtime
+Fitting model: XGBoost_BAG_L1 ... Training model for up to 41808.06s of the 70621.68s of remaining time.
+	Fitting 8 child models (S7F1 - S7F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1397	 = Validation score   (-root_mean_squared_error)
+	378.68s	 = Training   runtime
+	58.22s	 = Validation runtime
+Fitting model: NeuralNetTorch_BAG_L1 ... Training model for up to 41732.71s of the 70546.33s of remaining time.
+	Fitting 8 child models (S7F1 - S7F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1639	 = Validation score   (-root_mean_squared_error)
+	5419.13s	 = Training   runtime
+	8.92s	 = Validation runtime
+Fitting model: LightGBMLarge_BAG_L1 ... Training model for up to 40967.34s of the 69780.96s of remaining time.
+	Fitting 8 child models (S7F1 - S7F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1394	 = Validation score   (-root_mean_squared_error)
+	945.13s	 = Training   runtime
+	326.4s	 = Validation runtime
+Repeating k-fold bagging: 8/20
+Fitting model: LightGBMXT_BAG_L1 ... Training model for up to 40809.57s of the 69623.19s of remaining time.
+	Fitting 8 child models (S8F1 - S8F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1397	 = Validation score   (-root_mean_squared_error)
+	1825.46s	 = Training   runtime
+	3389.44s	 = Validation runtime
+Fitting model: LightGBM_BAG_L1 ... Training model for up to 40523.22s of the 69336.84s of remaining time.
+	Fitting 8 child models (S8F1 - S8F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1393	 = Validation score   (-root_mean_squared_error)
+	1132.35s	 = Training   runtime
+	552.25s	 = Validation runtime
+Fitting model: CatBoost_BAG_L1 ... Training model for up to 40366.17s of the 69179.79s of remaining time.
+	Fitting 8 child models (S8F1 - S8F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1404	 = Validation score   (-root_mean_squared_error)
+	1472.64s	 = Training   runtime
+	3.42s	 = Validation runtime
+Fitting model: NeuralNetFastAI_BAG_L1 ... Training model for up to 40166.23s of the 68979.85s of remaining time.
+	Fitting 8 child models (S8F1 - S8F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1426	 = Validation score   (-root_mean_squared_error)
+	4988.47s	 = Training   runtime
+	39.41s	 = Validation runtime
+Fitting model: XGBoost_BAG_L1 ... Training model for up to 39488.03s of the 68301.65s of remaining time.
+	Fitting 8 child models (S8F1 - S8F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1397	 = Validation score   (-root_mean_squared_error)
+	434.31s	 = Training   runtime
+	66.71s	 = Validation runtime
+Fitting model: NeuralNetTorch_BAG_L1 ... Training model for up to 39410.55s of the 68224.17s of remaining time.
+	Fitting 8 child models (S8F1 - S8F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1638	 = Validation score   (-root_mean_squared_error)
+	6179.36s	 = Training   runtime
+	10.2s	 = Validation runtime
+Fitting model: LightGBMLarge_BAG_L1 ... Training model for up to 38639.45s of the 67453.07s of remaining time.
+	Fitting 8 child models (S8F1 - S8F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1394	 = Validation score   (-root_mean_squared_error)
+	1085.74s	 = Training   runtime
+	371.42s	 = Validation runtime
+Repeating k-fold bagging: 9/20
+Fitting model: LightGBMXT_BAG_L1 ... Training model for up to 38472.29s of the 67285.91s of remaining time.
+	Fitting 8 child models (S9F1 - S9F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1397	 = Validation score   (-root_mean_squared_error)
+	2054.16s	 = Training   runtime
+	3838.33s	 = Validation runtime
+Fitting model: LightGBM_BAG_L1 ... Training model for up to 38170.08s of the 66983.7s of remaining time.
+	Fitting 8 child models (S9F1 - S9F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1393	 = Validation score   (-root_mean_squared_error)
+	1262.2s	 = Training   runtime
+	606.72s	 = Validation runtime
+Fitting model: CatBoost_BAG_L1 ... Training model for up to 38011.54s of the 66825.16s of remaining time.
+	Fitting 8 child models (S9F1 - S9F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1404	 = Validation score   (-root_mean_squared_error)
+	1680.49s	 = Training   runtime
+	3.83s	 = Validation runtime
+Fitting model: NeuralNetFastAI_BAG_L1 ... Training model for up to 37782.29s of the 66595.91s of remaining time.
+	Fitting 8 child models (S9F1 - S9F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1424	 = Validation score   (-root_mean_squared_error)
+	5635.83s	 = Training   runtime
+	44.19s	 = Validation runtime
+Fitting model: XGBoost_BAG_L1 ... Training model for up to 37112.28s of the 65925.9s of remaining time.
+	Fitting 8 child models (S9F1 - S9F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1396	 = Validation score   (-root_mean_squared_error)
+	485.9s	 = Training   runtime
+	74.24s	 = Validation runtime
+Fitting model: NeuralNetTorch_BAG_L1 ... Training model for up to 37037.02s of the 65850.64s of remaining time.
+	Fitting 8 child models (S9F1 - S9F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1638	 = Validation score   (-root_mean_squared_error)
+	7024.38s	 = Training   runtime
+	11.48s	 = Validation runtime
+Fitting model: LightGBMLarge_BAG_L1 ... Training model for up to 36178.79s of the 64992.41s of remaining time.
+	Fitting 8 child models (S9F1 - S9F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1394	 = Validation score   (-root_mean_squared_error)
+	1220.79s	 = Training   runtime
+	419.05s	 = Validation runtime
+Repeating k-fold bagging: 10/20
+Fitting model: LightGBMXT_BAG_L1 ... Training model for up to 36019.07s of the 64832.69s of remaining time.
+	Fitting 8 child models (S10F1 - S10F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1396	 = Validation score   (-root_mean_squared_error)
+	2284.27s	 = Training   runtime
+	4293.02s	 = Validation runtime
+Fitting model: LightGBM_BAG_L1 ... Training model for up to 35715.26s of the 64528.88s of remaining time.
+	Fitting 8 child models (S10F1 - S10F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1393	 = Validation score   (-root_mean_squared_error)
+	1405.09s	 = Training   runtime
+	680.17s	 = Validation runtime
+Fitting model: CatBoost_BAG_L1 ... Training model for up to 35543.26s of the 64356.88s of remaining time.
+	Fitting 8 child models (S10F1 - S10F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1404	 = Validation score   (-root_mean_squared_error)
+	1868.6s	 = Training   runtime
+	4.24s	 = Validation runtime
+Fitting model: NeuralNetFastAI_BAG_L1 ... Training model for up to 35333.07s of the 64146.69s of remaining time.
+	Fitting 8 child models (S10F1 - S10F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1424	 = Validation score   (-root_mean_squared_error)
+	6255.55s	 = Training   runtime
+	49.12s	 = Validation runtime
+Fitting model: XGBoost_BAG_L1 ... Training model for up to 34697.1s of the 63510.72s of remaining time.
+	Fitting 8 child models (S10F1 - S10F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1396	 = Validation score   (-root_mean_squared_error)
+	537.76s	 = Training   runtime
+	82.95s	 = Validation runtime
+Fitting model: NeuralNetTorch_BAG_L1 ... Training model for up to 34621.92s of the 63435.54s of remaining time.
+	Fitting 8 child models (S10F1 - S10F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1638	 = Validation score   (-root_mean_squared_error)
+	7809.77s	 = Training   runtime
+	12.76s	 = Validation runtime
+Fitting model: LightGBMLarge_BAG_L1 ... Training model for up to 33827.82s of the 62641.44s of remaining time.
+	Fitting 8 child models (S10F1 - S10F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1394	 = Validation score   (-root_mean_squared_error)
+	1360.64s	 = Training   runtime
+	462.65s	 = Validation runtime
+Repeating k-fold bagging: 11/20
+Fitting model: LightGBMXT_BAG_L1 ... Training model for up to 33662.03s of the 62475.65s of remaining time.
+	Fitting 8 child models (S11F1 - S11F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1396	 = Validation score   (-root_mean_squared_error)
+	2513.55s	 = Training   runtime
+	4753.39s	 = Validation runtime
+Fitting model: LightGBM_BAG_L1 ... Training model for up to 33348.46s of the 62162.08s of remaining time.
+	Fitting 8 child models (S11F1 - S11F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1393	 = Validation score   (-root_mean_squared_error)
+	1548.04s	 = Training   runtime
+	787.14s	 = Validation runtime
+Fitting model: CatBoost_BAG_L1 ... Training model for up to 33178.92s of the 61992.54s of remaining time.
+	Fitting 8 child models (S11F1 - S11F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1404	 = Validation score   (-root_mean_squared_error)
+	2062.43s	 = Training   runtime
+	4.63s	 = Validation runtime
+Fitting model: NeuralNetFastAI_BAG_L1 ... Training model for up to 32965.87s of the 61779.49s of remaining time.
+	Fitting 8 child models (S11F1 - S11F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1423	 = Validation score   (-root_mean_squared_error)
+	6895.62s	 = Training   runtime
+	54.12s	 = Validation runtime
+Fitting model: XGBoost_BAG_L1 ... Training model for up to 32307.31s of the 61120.93s of remaining time.
+	Fitting 8 child models (S11F1 - S11F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1396	 = Validation score   (-root_mean_squared_error)
+	588.74s	 = Training   runtime
+	90.43s	 = Validation runtime
+Fitting model: NeuralNetTorch_BAG_L1 ... Training model for up to 32232.99s of the 61046.61s of remaining time.
+	Fitting 8 child models (S11F1 - S11F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1637	 = Validation score   (-root_mean_squared_error)
+	8617.58s	 = Training   runtime
+	14.05s	 = Validation runtime
+Fitting model: LightGBMLarge_BAG_L1 ... Training model for up to 31415.09s of the 60228.71s of remaining time.
+	Fitting 8 child models (S11F1 - S11F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1394	 = Validation score   (-root_mean_squared_error)
+	1497.4s	 = Training   runtime
+	509.78s	 = Validation runtime
+Repeating k-fold bagging: 12/20
+Fitting model: LightGBMXT_BAG_L1 ... Training model for up to 31252.08s of the 60065.7s of remaining time.
+	Fitting 8 child models (S12F1 - S12F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1396	 = Validation score   (-root_mean_squared_error)
+	2735.68s	 = Training   runtime
+	5198.81s	 = Validation runtime
+Fitting model: LightGBM_BAG_L1 ... Training model for up to 30956.62s of the 59770.24s of remaining time.
+	Fitting 8 child models (S12F1 - S12F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1393	 = Validation score   (-root_mean_squared_error)
+	1698.62s	 = Training   runtime
+	870.69s	 = Validation runtime
+Fitting model: CatBoost_BAG_L1 ... Training model for up to 30776.17s of the 59589.79s of remaining time.
+	Fitting 8 child models (S12F1 - S12F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1404	 = Validation score   (-root_mean_squared_error)
+	2250.84s	 = Training   runtime
+	5.02s	 = Validation runtime
+Fitting model: NeuralNetFastAI_BAG_L1 ... Training model for up to 30566.34s of the 59379.96s of remaining time.
+	Fitting 8 child models (S12F1 - S12F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1423	 = Validation score   (-root_mean_squared_error)
+	7476.58s	 = Training   runtime
+	58.94s	 = Validation runtime
+Fitting model: XGBoost_BAG_L1 ... Training model for up to 29971.59s of the 58785.21s of remaining time.
+	Fitting 8 child models (S12F1 - S12F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1396	 = Validation score   (-root_mean_squared_error)
+	642.73s	 = Training   runtime
+	100.04s	 = Validation runtime
+Fitting model: NeuralNetTorch_BAG_L1 ... Training model for up to 29893.5s of the 58707.12s of remaining time.
+	Fitting 8 child models (S12F1 - S12F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1638	 = Validation score   (-root_mean_squared_error)
+	9395.1s	 = Training   runtime
+	15.34s	 = Validation runtime
+Fitting model: LightGBMLarge_BAG_L1 ... Training model for up to 29107.47s of the 57921.09s of remaining time.
+	Fitting 8 child models (S12F1 - S12F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1394	 = Validation score   (-root_mean_squared_error)
+	1629.1s	 = Training   runtime
+	556.21s	 = Validation runtime
+Repeating k-fold bagging: 13/20
+Fitting model: LightGBMXT_BAG_L1 ... Training model for up to 28948.45s of the 57762.07s of remaining time.
+	Fitting 8 child models (S13F1 - S13F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1396	 = Validation score   (-root_mean_squared_error)
+	2992.52s	 = Training   runtime
+	5568.68s	 = Validation runtime
+Fitting model: LightGBM_BAG_L1 ... Training model for up to 28626.91s of the 57440.53s of remaining time.
+	Fitting 8 child models (S13F1 - S13F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1393	 = Validation score   (-root_mean_squared_error)
+	1827.98s	 = Training   runtime
+	945.89s	 = Validation runtime
+Fitting model: CatBoost_BAG_L1 ... Training model for up to 28467.73s of the 57281.35s of remaining time.
+	Fitting 8 child models (S13F1 - S13F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1404	 = Validation score   (-root_mean_squared_error)
+	2462.72s	 = Training   runtime
+	5.43s	 = Validation runtime
+Fitting model: NeuralNetFastAI_BAG_L1 ... Training model for up to 28232.06s of the 57045.68s of remaining time.
+	Fitting 8 child models (S13F1 - S13F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1423	 = Validation score   (-root_mean_squared_error)
+	8048.29s	 = Training   runtime
+	63.73s	 = Validation runtime
+Fitting model: XGBoost_BAG_L1 ... Training model for up to 27641.0s of the 56454.62s of remaining time.
+	Fitting 8 child models (S13F1 - S13F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1396	 = Validation score   (-root_mean_squared_error)
+	697.37s	 = Training   runtime
+	108.83s	 = Validation runtime
+Fitting model: NeuralNetTorch_BAG_L1 ... Training model for up to 27562.51s of the 56376.13s of remaining time.
+	Fitting 8 child models (S13F1 - S13F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1639	 = Validation score   (-root_mean_squared_error)
+	10150.58s	 = Training   runtime
+	16.63s	 = Validation runtime
+Fitting model: LightGBMLarge_BAG_L1 ... Training model for up to 26795.68s of the 55609.3s of remaining time.
+	Fitting 8 child models (S13F1 - S13F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1394	 = Validation score   (-root_mean_squared_error)
+	1768.13s	 = Training   runtime
+	601.86s	 = Validation runtime
+Repeating k-fold bagging: 14/20
+Fitting model: LightGBMXT_BAG_L1 ... Training model for up to 26629.23s of the 55442.85s of remaining time.
+	Fitting 8 child models (S14F1 - S14F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1396	 = Validation score   (-root_mean_squared_error)
+	3217.28s	 = Training   runtime
+	5968.95s	 = Validation runtime
+Fitting model: LightGBM_BAG_L1 ... Training model for up to 26340.59s of the 55154.21s of remaining time.
+	Fitting 8 child models (S14F1 - S14F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1393	 = Validation score   (-root_mean_squared_error)
+	1980.77s	 = Training   runtime
+	1033.62s	 = Validation runtime
+Fitting model: CatBoost_BAG_L1 ... Training model for up to 26157.72s of the 54971.34s of remaining time.
+	Fitting 8 child models (S14F1 - S14F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1404	 = Validation score   (-root_mean_squared_error)
+	2642.13s	 = Training   runtime
+	5.83s	 = Validation runtime
+Fitting model: NeuralNetFastAI_BAG_L1 ... Training model for up to 25956.02s of the 54769.64s of remaining time.
+	Fitting 8 child models (S14F1 - S14F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1423	 = Validation score   (-root_mean_squared_error)
+	8644.42s	 = Training   runtime
+	68.7s	 = Validation runtime
+Fitting model: XGBoost_BAG_L1 ... Training model for up to 25340.92s of the 54154.54s of remaining time.
+	Fitting 8 child models (S14F1 - S14F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1396	 = Validation score   (-root_mean_squared_error)
+	752.15s	 = Training   runtime
+	117.82s	 = Validation runtime
+Fitting model: NeuralNetTorch_BAG_L1 ... Training model for up to 25264.17s of the 54077.79s of remaining time.
+	Fitting 8 child models (S14F1 - S14F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1639	 = Validation score   (-root_mean_squared_error)
+	10936.65s	 = Training   runtime
+	17.92s	 = Validation runtime
+Fitting model: LightGBMLarge_BAG_L1 ... Training model for up to 24469.12s of the 53282.74s of remaining time.
+	Fitting 8 child models (S14F1 - S14F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1394	 = Validation score   (-root_mean_squared_error)
+	1908.94s	 = Training   runtime
+	647.04s	 = Validation runtime
+Repeating k-fold bagging: 15/20
+Fitting model: LightGBMXT_BAG_L1 ... Training model for up to 24299.17s of the 53112.79s of remaining time.
+	Fitting 8 child models (S15F1 - S15F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1396	 = Validation score   (-root_mean_squared_error)
+	3451.93s	 = Training   runtime
+	6372.5s	 = Validation runtime
+Fitting model: LightGBM_BAG_L1 ... Training model for up to 24010.96s of the 52824.58s of remaining time.
+	Fitting 8 child models (S15F1 - S15F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1393	 = Validation score   (-root_mean_squared_error)
+	2112.17s	 = Training   runtime
+	1146.48s	 = Validation runtime
+Fitting model: CatBoost_BAG_L1 ... Training model for up to 23842.68s of the 52656.3s of remaining time.
+	Fitting 8 child models (S15F1 - S15F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1404	 = Validation score   (-root_mean_squared_error)
+	2828.59s	 = Training   runtime
+	6.21s	 = Validation runtime
+Fitting model: NeuralNetFastAI_BAG_L1 ... Training model for up to 23635.13s of the 52448.75s of remaining time.
+	Fitting 8 child models (S15F1 - S15F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1423	 = Validation score   (-root_mean_squared_error)
+	9224.75s	 = Training   runtime
+	73.75s	 = Validation runtime
+Fitting model: XGBoost_BAG_L1 ... Training model for up to 23042.07s of the 51855.69s of remaining time.
+	Fitting 8 child models (S15F1 - S15F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1396	 = Validation score   (-root_mean_squared_error)
+	801.26s	 = Training   runtime
+	126.61s	 = Validation runtime
+Fitting model: NeuralNetTorch_BAG_L1 ... Training model for up to 22969.01s of the 51782.63s of remaining time.
+	Fitting 8 child models (S15F1 - S15F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1639	 = Validation score   (-root_mean_squared_error)
+	11763.36s	 = Training   runtime
+	19.21s	 = Validation runtime
+Fitting model: LightGBMLarge_BAG_L1 ... Training model for up to 22129.6s of the 50943.22s of remaining time.
+	Fitting 8 child models (S15F1 - S15F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1394	 = Validation score   (-root_mean_squared_error)
+	2034.69s	 = Training   runtime
+	691.93s	 = Validation runtime
+Repeating k-fold bagging: 16/20
+Fitting model: LightGBMXT_BAG_L1 ... Training model for up to 21975.67s of the 50789.29s of remaining time.
+	Fitting 8 child models (S16F1 - S16F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1396	 = Validation score   (-root_mean_squared_error)
+	3680.76s	 = Training   runtime
+	6850.71s	 = Validation runtime
+Fitting model: LightGBM_BAG_L1 ... Training model for up to 21676.48s of the 50490.1s of remaining time.
+	Fitting 8 child models (S16F1 - S16F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1393	 = Validation score   (-root_mean_squared_error)
+	2261.0s	 = Training   runtime
+	1210.42s	 = Validation runtime
+Fitting model: CatBoost_BAG_L1 ... Training model for up to 21501.9s of the 50315.52s of remaining time.
+	Fitting 8 child models (S16F1 - S16F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1404	 = Validation score   (-root_mean_squared_error)
+	3023.85s	 = Training   runtime
+	6.61s	 = Validation runtime
+Fitting model: NeuralNetFastAI_BAG_L1 ... Training model for up to 21286.23s of the 50099.85s of remaining time.
+	Fitting 8 child models (S16F1 - S16F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1424	 = Validation score   (-root_mean_squared_error)
+	9810.03s	 = Training   runtime
+	78.76s	 = Validation runtime
+Fitting model: XGBoost_BAG_L1 ... Training model for up to 20680.9s of the 49494.52s of remaining time.
+	Fitting 8 child models (S16F1 - S16F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1396	 = Validation score   (-root_mean_squared_error)
+	855.01s	 = Training   runtime
+	134.45s	 = Validation runtime
+Fitting model: NeuralNetTorch_BAG_L1 ... Training model for up to 20604.08s of the 49417.7s of remaining time.
+	Fitting 8 child models (S16F1 - S16F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.164	 = Validation score   (-root_mean_squared_error)
+	12565.23s	 = Training   runtime
+	20.49s	 = Validation runtime
+Fitting model: LightGBMLarge_BAG_L1 ... Training model for up to 19791.9s of the 48605.52s of remaining time.
+	Fitting 8 child models (S16F1 - S16F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1394	 = Validation score   (-root_mean_squared_error)
+	2177.97s	 = Training   runtime
+	741.1s	 = Validation runtime
+Repeating k-fold bagging: 17/20
+Fitting model: LightGBMXT_BAG_L1 ... Training model for up to 19624.54s of the 48438.16s of remaining time.
+	Fitting 8 child models (S17F1 - S17F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1396	 = Validation score   (-root_mean_squared_error)
+	3930.24s	 = Training   runtime
+	7309.69s	 = Validation runtime
+Fitting model: LightGBM_BAG_L1 ... Training model for up to 19320.22s of the 48133.84s of remaining time.
+	Fitting 8 child models (S17F1 - S17F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1393	 = Validation score   (-root_mean_squared_error)
+	2402.4s	 = Training   runtime
+	1272.84s	 = Validation runtime
+Fitting model: CatBoost_BAG_L1 ... Training model for up to 19151.22s of the 47964.84s of remaining time.
+	Fitting 8 child models (S17F1 - S17F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1404	 = Validation score   (-root_mean_squared_error)
+	3219.45s	 = Training   runtime
+	7.23s	 = Validation runtime
+Fitting model: NeuralNetFastAI_BAG_L1 ... Training model for up to 18932.55s of the 47746.17s of remaining time.
+	Fitting 8 child models (S17F1 - S17F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1423	 = Validation score   (-root_mean_squared_error)
+	10389.87s	 = Training   runtime
+	83.64s	 = Validation runtime
+Fitting model: XGBoost_BAG_L1 ... Training model for up to 18333.23s of the 47146.85s of remaining time.
+	Fitting 8 child models (S17F1 - S17F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1396	 = Validation score   (-root_mean_squared_error)
+	907.27s	 = Training   runtime
+	142.39s	 = Validation runtime
+Fitting model: NeuralNetTorch_BAG_L1 ... Training model for up to 18256.93s of the 47070.55s of remaining time.
+	Fitting 8 child models (S17F1 - S17F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1639	 = Validation score   (-root_mean_squared_error)
+	13408.73s	 = Training   runtime
+	21.75s	 = Validation runtime
+Fitting model: LightGBMLarge_BAG_L1 ... Training model for up to 17401.95s of the 46215.57s of remaining time.
+	Fitting 8 child models (S17F1 - S17F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1394	 = Validation score   (-root_mean_squared_error)
+	2312.7s	 = Training   runtime
+	788.03s	 = Validation runtime
+Repeating k-fold bagging: 18/20
+Fitting model: LightGBMXT_BAG_L1 ... Training model for up to 17240.61s of the 46054.23s of remaining time.
+	Fitting 8 child models (S18F1 - S18F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1396	 = Validation score   (-root_mean_squared_error)
+	4169.46s	 = Training   runtime
+	7711.13s	 = Validation runtime
+Fitting model: LightGBM_BAG_L1 ... Training model for up to 16940.21s of the 45753.83s of remaining time.
+	Fitting 8 child models (S18F1 - S18F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1393	 = Validation score   (-root_mean_squared_error)
+	2532.78s	 = Training   runtime
+	1338.0s	 = Validation runtime
+Fitting model: CatBoost_BAG_L1 ... Training model for up to 16778.08s of the 45591.7s of remaining time.
+	Fitting 8 child models (S18F1 - S18F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1404	 = Validation score   (-root_mean_squared_error)
+	3402.7s	 = Training   runtime
+	7.69s	 = Validation runtime
+Fitting model: NeuralNetFastAI_BAG_L1 ... Training model for up to 16571.64s of the 45385.26s of remaining time.
+	Fitting 8 child models (S18F1 - S18F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1423	 = Validation score   (-root_mean_squared_error)
+	11001.73s	 = Training   runtime
+	88.52s	 = Validation runtime
+Fitting model: XGBoost_BAG_L1 ... Training model for up to 15942.03s of the 44755.65s of remaining time.
+	Fitting 8 child models (S18F1 - S18F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1396	 = Validation score   (-root_mean_squared_error)
+	960.1s	 = Training   runtime
+	151.67s	 = Validation runtime
+Fitting model: NeuralNetTorch_BAG_L1 ... Training model for up to 15867.62s of the 44681.24s of remaining time.
+	Fitting 8 child models (S18F1 - S18F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.164	 = Validation score   (-root_mean_squared_error)
+	14152.49s	 = Training   runtime
+	23.03s	 = Validation runtime
+Fitting model: LightGBMLarge_BAG_L1 ... Training model for up to 15111.4s of the 43925.02s of remaining time.
+	Fitting 8 child models (S18F1 - S18F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1394	 = Validation score   (-root_mean_squared_error)
+	2459.06s	 = Training   runtime
+	836.96s	 = Validation runtime
+Repeating k-fold bagging: 19/20
+Fitting model: LightGBMXT_BAG_L1 ... Training model for up to 14936.21s of the 43749.83s of remaining time.
+	Fitting 8 child models (S19F1 - S19F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1396	 = Validation score   (-root_mean_squared_error)
+	4381.22s	 = Training   runtime
+	8201.76s	 = Validation runtime
+Fitting model: LightGBM_BAG_L1 ... Training model for up to 14633.02s of the 43446.64s of remaining time.
+	Fitting 8 child models (S19F1 - S19F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1393	 = Validation score   (-root_mean_squared_error)
+	2687.61s	 = Training   runtime
+	1397.25s	 = Validation runtime
+Fitting model: CatBoost_BAG_L1 ... Training model for up to 14449.59s of the 43263.21s of remaining time.
+	Fitting 8 child models (S19F1 - S19F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1404	 = Validation score   (-root_mean_squared_error)
+	3586.94s	 = Training   runtime
+	8.11s	 = Validation runtime
+Fitting model: NeuralNetFastAI_BAG_L1 ... Training model for up to 14244.49s of the 43058.11s of remaining time.
+	Fitting 8 child models (S19F1 - S19F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1423	 = Validation score   (-root_mean_squared_error)
+	11661.79s	 = Training   runtime
+	93.33s	 = Validation runtime
+Fitting model: XGBoost_BAG_L1 ... Training model for up to 13566.95s of the 42380.57s of remaining time.
+	Fitting 8 child models (S19F1 - S19F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1396	 = Validation score   (-root_mean_squared_error)
+	1012.66s	 = Training   runtime
+	159.61s	 = Validation runtime
+Fitting model: NeuralNetTorch_BAG_L1 ... Training model for up to 13487.25s of the 42300.87s of remaining time.
+	Fitting 8 child models (S19F1 - S19F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1639	 = Validation score   (-root_mean_squared_error)
+	14924.74s	 = Training   runtime
+	24.31s	 = Validation runtime
+Fitting model: LightGBMLarge_BAG_L1 ... Training model for up to 12705.45s of the 41519.07s of remaining time.
+	Fitting 8 child models (S19F1 - S19F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1394	 = Validation score   (-root_mean_squared_error)
+	2586.2s	 = Training   runtime
+	881.86s	 = Validation runtime
+Repeating k-fold bagging: 20/20
+Fitting model: LightGBMXT_BAG_L1 ... Training model for up to 12548.27s of the 41361.89s of remaining time.
+	Fitting 8 child models (S20F1 - S20F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1396	 = Validation score   (-root_mean_squared_error)
+	4615.56s	 = Training   runtime
+	8680.11s	 = Validation runtime
+Fitting model: LightGBM_BAG_L1 ... Training model for up to 12250.69s of the 41064.31s of remaining time.
+	Fitting 8 child models (S20F1 - S20F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1393	 = Validation score   (-root_mean_squared_error)
+	2838.15s	 = Training   runtime
+	1526.23s	 = Validation runtime
+Fitting model: CatBoost_BAG_L1 ... Training model for up to 12066.84s of the 40880.46s of remaining time.
+	Fitting 8 child models (S20F1 - S20F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1404	 = Validation score   (-root_mean_squared_error)
+	3784.07s	 = Training   runtime
+	8.54s	 = Validation runtime
+Fitting model: NeuralNetFastAI_BAG_L1 ... Training model for up to 11848.37s of the 40661.99s of remaining time.
+	Fitting 8 child models (S20F1 - S20F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1423	 = Validation score   (-root_mean_squared_error)
+	12303.13s	 = Training   runtime
+	98.34s	 = Validation runtime
+Fitting model: XGBoost_BAG_L1 ... Training model for up to 11187.59s of the 40001.21s of remaining time.
+	Fitting 8 child models (S20F1 - S20F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1396	 = Validation score   (-root_mean_squared_error)
+	1064.48s	 = Training   runtime
+	166.76s	 = Validation runtime
+Fitting model: NeuralNetTorch_BAG_L1 ... Training model for up to 11113.04s of the 39926.66s of remaining time.
+	Fitting 8 child models (S20F1 - S20F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.164	 = Validation score   (-root_mean_squared_error)
+	15696.16s	 = Training   runtime
+	25.59s	 = Validation runtime
+Fitting model: LightGBMLarge_BAG_L1 ... Training model for up to 10327.49s of the 39141.11s of remaining time.
+	Fitting 8 child models (S20F1 - S20F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1394	 = Validation score   (-root_mean_squared_error)
+	2721.26s	 = Training   runtime
+	926.07s	 = Validation runtime
+Completed 20/20 k-fold bagging repeats ...
+Fitting model: WeightedEnsemble_L2 ... Training model for up to 5758.4s of the 38979.79s of remaining time.
+	-0.139	 = Validation score   (-root_mean_squared_error)
+	11.73s	 = Training   runtime
+	0.01s	 = Validation runtime
+Fitting 9 L2 models ...
+Fitting model: LightGBMXT_BAG_L2 ... Training model for up to 38967.9s of the 38967.79s of remaining time.
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1394	 = Validation score   (-root_mean_squared_error)
+	149.61s	 = Training   runtime
+	52.51s	 = Validation runtime
+Fitting model: LightGBM_BAG_L2 ... Training model for up to 38793.58s of the 38793.46s of remaining time.
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.139	 = Validation score   (-root_mean_squared_error)
+	27.92s	 = Training   runtime
+	2.54s	 = Validation runtime
+Fitting model: RandomForestMSE_BAG_L2 ... Training model for up to 38749.32s of the 38749.2s of remaining time.
+	-0.1391	 = Validation score   (-root_mean_squared_error)
+	321.65s	 = Training   runtime
+	42.59s	 = Validation runtime
+Fitting model: CatBoost_BAG_L2 ... Training model for up to 38378.0s of the 38377.87s of remaining time.
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1395	 = Validation score   (-root_mean_squared_error)
+	30.73s	 = Training   runtime
+	0.42s	 = Validation runtime
+Fitting model: ExtraTreesMSE_BAG_L2 ... Training model for up to 38319.1s of the 38318.98s of remaining time.
+	-0.1388	 = Validation score   (-root_mean_squared_error)
+	92.06s	 = Training   runtime
+	31.98s	 = Validation runtime
+Fitting model: NeuralNetFastAI_BAG_L2 ... Training model for up to 38188.13s of the 38187.99s of remaining time.
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1389	 = Validation score   (-root_mean_squared_error)
+	758.57s	 = Training   runtime
+	5.27s	 = Validation runtime
+Fitting model: XGBoost_BAG_L2 ... Training model for up to 37404.31s of the 37404.19s of remaining time.
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.139	 = Validation score   (-root_mean_squared_error)
+	15.13s	 = Training   runtime
+	1.93s	 = Validation runtime
+Fitting model: NeuralNetTorch_BAG_L2 ... Training model for up to 37358.69s of the 37358.56s of remaining time.
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1673	 = Validation score   (-root_mean_squared_error)
+	837.83s	 = Training   runtime
+	3.59s	 = Validation runtime
+Fitting model: LightGBMLarge_BAG_L2 ... Training model for up to 36516.49s of the 36516.37s of remaining time.
+	Fitting 8 child models (S1F1 - S1F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.139	 = Validation score   (-root_mean_squared_error)
+	28.37s	 = Training   runtime
+	2.17s	 = Validation runtime
+Repeating k-fold bagging: 2/20
+Fitting model: LightGBMXT_BAG_L2 ... Training model for up to 36457.42s of the 36457.29s of remaining time.
+	Fitting 8 child models (S2F1 - S2F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1393	 = Validation score   (-root_mean_squared_error)
+	309.54s	 = Training   runtime
+	100.78s	 = Validation runtime
+Fitting model: LightGBM_BAG_L2 ... Training model for up to 36287.81s of the 36287.69s of remaining time.
+	Fitting 8 child models (S2F1 - S2F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.139	 = Validation score   (-root_mean_squared_error)
+	52.07s	 = Training   runtime
+	4.79s	 = Validation runtime
+Fitting model: CatBoost_BAG_L2 ... Training model for up to 36241.6s of the 36241.48s of remaining time.
+	Fitting 8 child models (S2F1 - S2F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1394	 = Validation score   (-root_mean_squared_error)
+	67.86s	 = Training   runtime
+	0.95s	 = Validation runtime
+Fitting model: NeuralNetFastAI_BAG_L2 ... Training model for up to 36200.02s of the 36199.91s of remaining time.
+	Fitting 8 child models (S2F1 - S2F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1389	 = Validation score   (-root_mean_squared_error)
+	1517.43s	 = Training   runtime
+	10.59s	 = Validation runtime
+Fitting model: XGBoost_BAG_L2 ... Training model for up to 35435.24s of the 35435.11s of remaining time.
+	Fitting 8 child models (S2F1 - S2F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.139	 = Validation score   (-root_mean_squared_error)
+	30.11s	 = Training   runtime
+	3.78s	 = Validation runtime
+Fitting model: NeuralNetTorch_BAG_L2 ... Training model for up to 35385.67s of the 35385.55s of remaining time.
+	Fitting 8 child models (S2F1 - S2F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1667	 = Validation score   (-root_mean_squared_error)
+	1698.19s	 = Training   runtime
+	7.13s	 = Validation runtime
+Fitting model: LightGBMLarge_BAG_L2 ... Training model for up to 34521.46s of the 34521.34s of remaining time.
+	Fitting 8 child models (S2F1 - S2F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1389	 = Validation score   (-root_mean_squared_error)
+	61.5s	 = Training   runtime
+	4.28s	 = Validation runtime
+Repeating k-fold bagging: 3/20
+Fitting model: LightGBMXT_BAG_L2 ... Training model for up to 34469.46s of the 34469.34s of remaining time.
+	Fitting 8 child models (S3F1 - S3F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1392	 = Validation score   (-root_mean_squared_error)
+	461.36s	 = Training   runtime
+	145.07s	 = Validation runtime
+Fitting model: LightGBM_BAG_L2 ... Training model for up to 34309.11s of the 34308.99s of remaining time.
+	Fitting 8 child models (S3F1 - S3F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1389	 = Validation score   (-root_mean_squared_error)
+	77.82s	 = Training   runtime
+	7.34s	 = Validation runtime
+Fitting model: CatBoost_BAG_L2 ... Training model for up to 34278.44s of the 34278.33s of remaining time.
+	Fitting 8 child models (S3F1 - S3F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1394	 = Validation score   (-root_mean_squared_error)
+	109.05s	 = Training   runtime
+	1.33s	 = Validation runtime
+Fitting model: NeuralNetFastAI_BAG_L2 ... Training model for up to 34233.86s of the 34233.74s of remaining time.
+	Fitting 8 child models (S3F1 - S3F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1388	 = Validation score   (-root_mean_squared_error)
+	2243.46s	 = Training   runtime
+	15.91s	 = Validation runtime
+Fitting model: XGBoost_BAG_L2 ... Training model for up to 33503.56s of the 33503.45s of remaining time.
+	Fitting 8 child models (S3F1 - S3F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.139	 = Validation score   (-root_mean_squared_error)
+	44.32s	 = Training   runtime
+	5.78s	 = Validation runtime
+Fitting model: NeuralNetTorch_BAG_L2 ... Training model for up to 33485.04s of the 33484.92s of remaining time.
+	Fitting 8 child models (S3F1 - S3F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.166	 = Validation score   (-root_mean_squared_error)
+	2447.29s	 = Training   runtime
+	10.75s	 = Validation runtime
+Fitting model: LightGBMLarge_BAG_L2 ... Training model for up to 32732.2s of the 32732.08s of remaining time.
+	Fitting 8 child models (S3F1 - S3F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1389	 = Validation score   (-root_mean_squared_error)
+	89.01s	 = Training   runtime
+	6.87s	 = Validation runtime
+Repeating k-fold bagging: 4/20
+Fitting model: LightGBMXT_BAG_L2 ... Training model for up to 32700.0s of the 32699.87s of remaining time.
+	Fitting 8 child models (S4F1 - S4F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1392	 = Validation score   (-root_mean_squared_error)
+	630.72s	 = Training   runtime
+	196.65s	 = Validation runtime
+Fitting model: LightGBM_BAG_L2 ... Training model for up to 32520.84s of the 32520.73s of remaining time.
+	Fitting 8 child models (S4F1 - S4F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1389	 = Validation score   (-root_mean_squared_error)
+	105.95s	 = Training   runtime
+	9.96s	 = Validation runtime
+Fitting model: CatBoost_BAG_L2 ... Training model for up to 32488.15s of the 32488.04s of remaining time.
+	Fitting 8 child models (S4F1 - S4F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1394	 = Validation score   (-root_mean_squared_error)
+	152.44s	 = Training   runtime
+	1.73s	 = Validation runtime
+Fitting model: NeuralNetFastAI_BAG_L2 ... Training model for up to 32441.39s of the 32441.28s of remaining time.
+	Fitting 8 child models (S4F1 - S4F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1388	 = Validation score   (-root_mean_squared_error)
+	2971.8s	 = Training   runtime
+	21.33s	 = Validation runtime
+Fitting model: XGBoost_BAG_L2 ... Training model for up to 31708.85s of the 31708.73s of remaining time.
+	Fitting 8 child models (S4F1 - S4F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.139	 = Validation score   (-root_mean_squared_error)
+	57.84s	 = Training   runtime
+	7.78s	 = Validation runtime
+Fitting model: NeuralNetTorch_BAG_L2 ... Training model for up to 31691.05s of the 31690.93s of remaining time.
+	Fitting 8 child models (S4F1 - S4F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1657	 = Validation score   (-root_mean_squared_error)
+	3287.17s	 = Training   runtime
+	14.31s	 = Validation runtime
+Fitting model: LightGBMLarge_BAG_L2 ... Training model for up to 30847.46s of the 30847.35s of remaining time.
+	Fitting 8 child models (S4F1 - S4F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1389	 = Validation score   (-root_mean_squared_error)
+	116.5s	 = Training   runtime
+	9.01s	 = Validation runtime
+Repeating k-fold bagging: 5/20
+Fitting model: LightGBMXT_BAG_L2 ... Training model for up to 30815.57s of the 30815.46s of remaining time.
+	Fitting 8 child models (S5F1 - S5F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1392	 = Validation score   (-root_mean_squared_error)
+	796.32s	 = Training   runtime
+	244.39s	 = Validation runtime
+Fitting model: LightGBM_BAG_L2 ... Training model for up to 30640.76s of the 30640.65s of remaining time.
+	Fitting 8 child models (S5F1 - S5F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1389	 = Validation score   (-root_mean_squared_error)
+	132.45s	 = Training   runtime
+	12.95s	 = Validation runtime
+Fitting model: CatBoost_BAG_L2 ... Training model for up to 30609.76s of the 30609.65s of remaining time.
+	Fitting 8 child models (S5F1 - S5F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1393	 = Validation score   (-root_mean_squared_error)
+	198.05s	 = Training   runtime
+	2.0s	 = Validation runtime
+Fitting model: NeuralNetFastAI_BAG_L2 ... Training model for up to 30560.52s of the 30560.4s of remaining time.
+	Fitting 8 child models (S5F1 - S5F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1388	 = Validation score   (-root_mean_squared_error)
+	3701.62s	 = Training   runtime
+	26.59s	 = Validation runtime
+Fitting model: XGBoost_BAG_L2 ... Training model for up to 29826.01s of the 29825.87s of remaining time.
+	Fitting 8 child models (S5F1 - S5F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.139	 = Validation score   (-root_mean_squared_error)
+	72.36s	 = Training   runtime
+	9.55s	 = Validation runtime
+Fitting model: NeuralNetTorch_BAG_L2 ... Training model for up to 29806.82s of the 29806.71s of remaining time.
+	Fitting 8 child models (S5F1 - S5F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1657	 = Validation score   (-root_mean_squared_error)
+	4064.37s	 = Training   runtime
+	17.91s	 = Validation runtime
+Fitting model: LightGBMLarge_BAG_L2 ... Training model for up to 29025.77s of the 29025.66s of remaining time.
+	Fitting 8 child models (S5F1 - S5F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1389	 = Validation score   (-root_mean_squared_error)
+	147.97s	 = Training   runtime
+	11.39s	 = Validation runtime
+Repeating k-fold bagging: 6/20
+Fitting model: LightGBMXT_BAG_L2 ... Training model for up to 28971.02s of the 28970.91s of remaining time.
+	Fitting 8 child models (S6F1 - S6F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1392	 = Validation score   (-root_mean_squared_error)
+	943.22s	 = Training   runtime
+	288.99s	 = Validation runtime
+Fitting model: LightGBM_BAG_L2 ... Training model for up to 28815.44s of the 28815.32s of remaining time.
+	Fitting 8 child models (S6F1 - S6F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1389	 = Validation score   (-root_mean_squared_error)
+	159.76s	 = Training   runtime
+	16.23s	 = Validation runtime
+Fitting model: CatBoost_BAG_L2 ... Training model for up to 28782.24s of the 28782.13s of remaining time.
+	Fitting 8 child models (S6F1 - S6F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1393	 = Validation score   (-root_mean_squared_error)
+	243.13s	 = Training   runtime
+	2.38s	 = Validation runtime
+Fitting model: NeuralNetFastAI_BAG_L2 ... Training model for up to 28733.51s of the 28733.39s of remaining time.
+	Fitting 8 child models (S6F1 - S6F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1388	 = Validation score   (-root_mean_squared_error)
+	4422.06s	 = Training   runtime
+	31.77s	 = Validation runtime
+Fitting model: XGBoost_BAG_L2 ... Training model for up to 28008.51s of the 28008.4s of remaining time.
+	Fitting 8 child models (S6F1 - S6F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.139	 = Validation score   (-root_mean_squared_error)
+	86.66s	 = Training   runtime
+	11.27s	 = Validation runtime
+Fitting model: NeuralNetTorch_BAG_L2 ... Training model for up to 27989.71s of the 27989.6s of remaining time.
+	Fitting 8 child models (S6F1 - S6F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1655	 = Validation score   (-root_mean_squared_error)
+	4854.01s	 = Training   runtime
+	21.5s	 = Validation runtime
+Fitting model: LightGBMLarge_BAG_L2 ... Training model for up to 27195.74s of the 27195.63s of remaining time.
+	Fitting 8 child models (S6F1 - S6F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1389	 = Validation score   (-root_mean_squared_error)
+	173.4s	 = Training   runtime
+	14.1s	 = Validation runtime
+Repeating k-fold bagging: 7/20
+Fitting model: LightGBMXT_BAG_L2 ... Training model for up to 27165.74s of the 27165.61s of remaining time.
+	Fitting 8 child models (S7F1 - S7F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1391	 = Validation score   (-root_mean_squared_error)
+	1109.28s	 = Training   runtime
+	346.1s	 = Validation runtime
+Fitting model: LightGBM_BAG_L2 ... Training model for up to 26990.4s of the 26990.27s of remaining time.
+	Fitting 8 child models (S7F1 - S7F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1389	 = Validation score   (-root_mean_squared_error)
+	190.14s	 = Training   runtime
+	21.28s	 = Validation runtime
+Fitting model: CatBoost_BAG_L2 ... Training model for up to 26955.06s of the 26954.94s of remaining time.
+	Fitting 8 child models (S7F1 - S7F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1393	 = Validation score   (-root_mean_squared_error)
+	289.82s	 = Training   runtime
+	2.89s	 = Validation runtime
+Fitting model: NeuralNetFastAI_BAG_L2 ... Training model for up to 26904.56s of the 26904.44s of remaining time.
+	Fitting 8 child models (S7F1 - S7F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1388	 = Validation score   (-root_mean_squared_error)
+	5152.73s	 = Training   runtime
+	37.05s	 = Validation runtime
+Fitting model: XGBoost_BAG_L2 ... Training model for up to 26169.51s of the 26169.39s of remaining time.
+	Fitting 8 child models (S7F1 - S7F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.139	 = Validation score   (-root_mean_squared_error)
+	100.87s	 = Training   runtime
+	13.46s	 = Validation runtime
+Fitting model: NeuralNetTorch_BAG_L2 ... Training model for up to 26150.6s of the 26150.48s of remaining time.
+	Fitting 8 child models (S7F1 - S7F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1657	 = Validation score   (-root_mean_squared_error)
+	5605.15s	 = Training   runtime
+	25.1s	 = Validation runtime
+Fitting model: LightGBMLarge_BAG_L2 ... Training model for up to 25395.39s of the 25395.28s of remaining time.
+	Fitting 8 child models (S7F1 - S7F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1389	 = Validation score   (-root_mean_squared_error)
+	203.37s	 = Training   runtime
+	16.46s	 = Validation runtime
+Repeating k-fold bagging: 8/20
+Fitting model: LightGBMXT_BAG_L2 ... Training model for up to 25359.83s of the 25359.72s of remaining time.
+	Fitting 8 child models (S8F1 - S8F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1391	 = Validation score   (-root_mean_squared_error)
+	1266.47s	 = Training   runtime
+	392.75s	 = Validation runtime
+Fitting model: LightGBM_BAG_L2 ... Training model for up to 25194.12s of the 25194.01s of remaining time.
+	Fitting 8 child models (S8F1 - S8F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1389	 = Validation score   (-root_mean_squared_error)
+	213.6s	 = Training   runtime
+	23.28s	 = Validation runtime
+Fitting model: CatBoost_BAG_L2 ... Training model for up to 25166.07s of the 25165.96s of remaining time.
+	Fitting 8 child models (S8F1 - S8F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1393	 = Validation score   (-root_mean_squared_error)
+	340.63s	 = Training   runtime
+	3.26s	 = Validation runtime
+Fitting model: NeuralNetFastAI_BAG_L2 ... Training model for up to 25110.48s of the 25110.37s of remaining time.
+	Fitting 8 child models (S8F1 - S8F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1388	 = Validation score   (-root_mean_squared_error)
+	5872.35s	 = Training   runtime
+	42.41s	 = Validation runtime
+Fitting model: XGBoost_BAG_L2 ... Training model for up to 24385.4s of the 24385.28s of remaining time.
+	Fitting 8 child models (S8F1 - S8F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.139	 = Validation score   (-root_mean_squared_error)
+	114.24s	 = Training   runtime
+	15.21s	 = Validation runtime
+Fitting model: NeuralNetTorch_BAG_L2 ... Training model for up to 24367.33s of the 24367.21s of remaining time.
+	Fitting 8 child models (S8F1 - S8F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1658	 = Validation score   (-root_mean_squared_error)
+	6447.57s	 = Training   runtime
+	28.67s	 = Validation runtime
+Fitting model: LightGBMLarge_BAG_L2 ... Training model for up to 23520.74s of the 23520.63s of remaining time.
+	Fitting 8 child models (S8F1 - S8F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1389	 = Validation score   (-root_mean_squared_error)
+	231.0s	 = Training   runtime
+	18.42s	 = Validation runtime
+Repeating k-fold bagging: 9/20
+Fitting model: LightGBMXT_BAG_L2 ... Training model for up to 23488.43s of the 23488.32s of remaining time.
+	Fitting 8 child models (S9F1 - S9F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1391	 = Validation score   (-root_mean_squared_error)
+	1430.9s	 = Training   runtime
+	438.68s	 = Validation runtime
+Fitting model: LightGBM_BAG_L2 ... Training model for up to 23314.46s of the 23314.34s of remaining time.
+	Fitting 8 child models (S9F1 - S9F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1389	 = Validation score   (-root_mean_squared_error)
+	240.28s	 = Training   runtime
+	26.29s	 = Validation runtime
+Fitting model: CatBoost_BAG_L2 ... Training model for up to 23282.76s of the 23282.64s of remaining time.
+	Fitting 8 child models (S9F1 - S9F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1393	 = Validation score   (-root_mean_squared_error)
+	390.0s	 = Training   runtime
+	3.72s	 = Validation runtime
+Fitting model: NeuralNetFastAI_BAG_L2 ... Training model for up to 23229.61s of the 23229.5s of remaining time.
+	Fitting 8 child models (S9F1 - S9F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1388	 = Validation score   (-root_mean_squared_error)
+	6597.26s	 = Training   runtime
+	47.69s	 = Validation runtime
+Fitting model: XGBoost_BAG_L2 ... Training model for up to 22499.94s of the 22499.82s of remaining time.
+	Fitting 8 child models (S9F1 - S9F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.139	 = Validation score   (-root_mean_squared_error)
+	128.29s	 = Training   runtime
+	17.07s	 = Validation runtime
+Fitting model: NeuralNetTorch_BAG_L2 ... Training model for up to 22480.3s of the 22480.18s of remaining time.
+	Fitting 8 child models (S9F1 - S9F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1657	 = Validation score   (-root_mean_squared_error)
+	7256.75s	 = Training   runtime
+	32.24s	 = Validation runtime
+Fitting model: LightGBMLarge_BAG_L2 ... Training model for up to 21666.84s of the 21666.72s of remaining time.
+	Fitting 8 child models (S9F1 - S9F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1389	 = Validation score   (-root_mean_squared_error)
+	262.33s	 = Training   runtime
+	20.45s	 = Validation runtime
+Repeating k-fold bagging: 10/20
+Fitting model: LightGBMXT_BAG_L2 ... Training model for up to 21630.72s of the 21630.6s of remaining time.
+	Fitting 8 child models (S10F1 - S10F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1391	 = Validation score   (-root_mean_squared_error)
+	1605.82s	 = Training   runtime
+	487.89s	 = Validation runtime
+Fitting model: LightGBM_BAG_L2 ... Training model for up to 21446.28s of the 21446.16s of remaining time.
+	Fitting 8 child models (S10F1 - S10F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1389	 = Validation score   (-root_mean_squared_error)
+	266.35s	 = Training   runtime
+	30.66s	 = Validation runtime
+Fitting model: CatBoost_BAG_L2 ... Training model for up to 21414.33s of the 21414.21s of remaining time.
+	Fitting 8 child models (S10F1 - S10F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1393	 = Validation score   (-root_mean_squared_error)
+	433.29s	 = Training   runtime
+	4.11s	 = Validation runtime
+Fitting model: NeuralNetFastAI_BAG_L2 ... Training model for up to 21366.63s of the 21366.52s of remaining time.
+	Fitting 8 child models (S10F1 - S10F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1388	 = Validation score   (-root_mean_squared_error)
+	7322.71s	 = Training   runtime
+	52.96s	 = Validation runtime
+Fitting model: XGBoost_BAG_L2 ... Training model for up to 20635.73s of the 20635.61s of remaining time.
+	Fitting 8 child models (S10F1 - S10F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.139	 = Validation score   (-root_mean_squared_error)
+	142.06s	 = Training   runtime
+	19.02s	 = Validation runtime
+Fitting model: NeuralNetTorch_BAG_L2 ... Training model for up to 20616.97s of the 20616.85s of remaining time.
+	Fitting 8 child models (S10F1 - S10F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.166	 = Validation score   (-root_mean_squared_error)
+	8074.12s	 = Training   runtime
+	35.81s	 = Validation runtime
+Fitting model: LightGBMLarge_BAG_L2 ... Training model for up to 19795.17s of the 19795.06s of remaining time.
+	Fitting 8 child models (S10F1 - S10F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1389	 = Validation score   (-root_mean_squared_error)
+	292.23s	 = Training   runtime
+	22.58s	 = Validation runtime
+Repeating k-fold bagging: 11/20
+Fitting model: LightGBMXT_BAG_L2 ... Training model for up to 19759.64s of the 19759.52s of remaining time.
+	Fitting 8 child models (S11F1 - S11F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1391	 = Validation score   (-root_mean_squared_error)
+	1755.84s	 = Training   runtime
+	538.96s	 = Validation runtime
+Fitting model: LightGBM_BAG_L2 ... Training model for up to 19601.16s of the 19601.04s of remaining time.
+	Fitting 8 child models (S11F1 - S11F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1389	 = Validation score   (-root_mean_squared_error)
+	292.52s	 = Training   runtime
+	33.34s	 = Validation runtime
+Fitting model: CatBoost_BAG_L2 ... Training model for up to 19569.49s of the 19569.38s of remaining time.
+	Fitting 8 child models (S11F1 - S11F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1393	 = Validation score   (-root_mean_squared_error)
+	477.26s	 = Training   runtime
+	4.52s	 = Validation runtime
+Fitting model: NeuralNetFastAI_BAG_L2 ... Training model for up to 19521.58s of the 19521.46s of remaining time.
+	Fitting 8 child models (S11F1 - S11F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1388	 = Validation score   (-root_mean_squared_error)
+	8047.25s	 = Training   runtime
+	58.46s	 = Validation runtime
+Fitting model: XGBoost_BAG_L2 ... Training model for up to 18792.03s of the 18791.91s of remaining time.
+	Fitting 8 child models (S11F1 - S11F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.139	 = Validation score   (-root_mean_squared_error)
+	156.21s	 = Training   runtime
+	20.95s	 = Validation runtime
+Fitting model: NeuralNetTorch_BAG_L2 ... Training model for up to 18773.01s of the 18772.89s of remaining time.
+	Fitting 8 child models (S11F1 - S11F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.166	 = Validation score   (-root_mean_squared_error)
+	8863.79s	 = Training   runtime
+	39.42s	 = Validation runtime
+Fitting model: LightGBMLarge_BAG_L2 ... Training model for up to 17978.7s of the 17978.59s of remaining time.
+	Fitting 8 child models (S11F1 - S11F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1389	 = Validation score   (-root_mean_squared_error)
+	323.43s	 = Training   runtime
+	24.6s	 = Validation runtime
+Repeating k-fold bagging: 12/20
+Fitting model: LightGBMXT_BAG_L2 ... Training model for up to 17942.46s of the 17942.34s of remaining time.
+	Fitting 8 child models (S12F1 - S12F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1391	 = Validation score   (-root_mean_squared_error)
+	1924.02s	 = Training   runtime
+	593.27s	 = Validation runtime
+Fitting model: LightGBM_BAG_L2 ... Training model for up to 17764.96s of the 17764.84s of remaining time.
+	Fitting 8 child models (S12F1 - S12F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1389	 = Validation score   (-root_mean_squared_error)
+	317.66s	 = Training   runtime
+	36.73s	 = Validation runtime
+Fitting model: CatBoost_BAG_L2 ... Training model for up to 17711.53s of the 17711.42s of remaining time.
+	Fitting 8 child models (S12F1 - S12F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1393	 = Validation score   (-root_mean_squared_error)
+	523.07s	 = Training   runtime
+	4.86s	 = Validation runtime
+Fitting model: NeuralNetFastAI_BAG_L2 ... Training model for up to 17661.15s of the 17661.03s of remaining time.
+	Fitting 8 child models (S12F1 - S12F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1388	 = Validation score   (-root_mean_squared_error)
+	8781.81s	 = Training   runtime
+	63.56s	 = Validation runtime
+Fitting model: XGBoost_BAG_L2 ... Training model for up to 16921.2s of the 16921.07s of remaining time.
+	Fitting 8 child models (S12F1 - S12F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.139	 = Validation score   (-root_mean_squared_error)
+	171.42s	 = Training   runtime
+	22.81s	 = Validation runtime
+Fitting model: NeuralNetTorch_BAG_L2 ... Training model for up to 16871.58s of the 16871.46s of remaining time.
+	Fitting 8 child models (S12F1 - S12F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.166	 = Validation score   (-root_mean_squared_error)
+	9695.25s	 = Training   runtime
+	43.0s	 = Validation runtime
+Fitting model: LightGBMLarge_BAG_L2 ... Training model for up to 16035.61s of the 16035.5s of remaining time.
+	Fitting 8 child models (S12F1 - S12F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1389	 = Validation score   (-root_mean_squared_error)
+	349.51s	 = Training   runtime
+	26.74s	 = Validation runtime
+Repeating k-fold bagging: 13/20
+Fitting model: LightGBMXT_BAG_L2 ... Training model for up to 15987.51s of the 15987.39s of remaining time.
+	Fitting 8 child models (S13F1 - S13F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1391	 = Validation score   (-root_mean_squared_error)
+	2081.86s	 = Training   runtime
+	641.75s	 = Validation runtime
+Fitting model: LightGBM_BAG_L2 ... Training model for up to 15819.37s of the 15819.25s of remaining time.
+	Fitting 8 child models (S13F1 - S13F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1389	 = Validation score   (-root_mean_squared_error)
+	342.57s	 = Training   runtime
+	39.54s	 = Validation runtime
+Fitting model: CatBoost_BAG_L2 ... Training model for up to 15788.8s of the 15788.69s of remaining time.
+	Fitting 8 child models (S13F1 - S13F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1393	 = Validation score   (-root_mean_squared_error)
+	566.16s	 = Training   runtime
+	5.24s	 = Validation runtime
+Fitting model: NeuralNetFastAI_BAG_L2 ... Training model for up to 15741.3s of the 15741.18s of remaining time.
+	Fitting 8 child models (S13F1 - S13F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1388	 = Validation score   (-root_mean_squared_error)
+	9500.29s	 = Training   runtime
+	68.8s	 = Validation runtime
+Fitting model: XGBoost_BAG_L2 ... Training model for up to 15016.99s of the 15016.88s of remaining time.
+	Fitting 8 child models (S13F1 - S13F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.139	 = Validation score   (-root_mean_squared_error)
+	185.43s	 = Training   runtime
+	24.74s	 = Validation runtime
+Fitting model: NeuralNetTorch_BAG_L2 ... Training model for up to 14980.78s of the 14980.66s of remaining time.
+	Fitting 8 child models (S13F1 - S13F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.166	 = Validation score   (-root_mean_squared_error)
+	10557.98s	 = Training   runtime
+	46.6s	 = Validation runtime
+Fitting model: LightGBMLarge_BAG_L2 ... Training model for up to 14112.56s of the 14112.44s of remaining time.
+	Fitting 8 child models (S13F1 - S13F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1389	 = Validation score   (-root_mean_squared_error)
+	380.17s	 = Training   runtime
+	29.07s	 = Validation runtime
+Repeating k-fold bagging: 14/20
+Fitting model: LightGBMXT_BAG_L2 ... Training model for up to 14046.47s of the 14046.35s of remaining time.
+	Fitting 8 child models (S14F1 - S14F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1391	 = Validation score   (-root_mean_squared_error)
+	2246.64s	 = Training   runtime
+	690.74s	 = Validation runtime
+Fitting model: LightGBM_BAG_L2 ... Training model for up to 13854.02s of the 13853.9s of remaining time.
+	Fitting 8 child models (S14F1 - S14F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1389	 = Validation score   (-root_mean_squared_error)
+	375.01s	 = Training   runtime
+	42.78s	 = Validation runtime
+Fitting model: CatBoost_BAG_L2 ... Training model for up to 13789.21s of the 13789.09s of remaining time.
+	Fitting 8 child models (S14F1 - S14F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1393	 = Validation score   (-root_mean_squared_error)
+	610.03s	 = Training   runtime
+	5.62s	 = Validation runtime
+Fitting model: NeuralNetFastAI_BAG_L2 ..q. Training model for up to 13735.77s of the 13735.65s of remaining time.
+	Fitting 8 child models (S14F1 - S14F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1388	 = Validation score   (-root_mean_squared_error)
+	10226.04s	 = Training   runtime
+	74.02s	 = Validation runtime
+Fitting model: XGBoost_BAG_L2 ... Training model for up to 13005.1s of the 13004.98s of remaining time.
+	Fitting 8 child models (S14F1 - S14F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.139	 = Validation score   (-root_mean_squared_error)
+	199.48s	 = Training   runtime
+	26.65s	 = Validation runtime
+Fitting model: NeuralNetTorch_BAG_L2 ... Training model for up to 12960.88s of the 12960.76s of remaining time.
+	Fitting 8 child models (S14F1 - S14F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.166	 = Validation score   (-root_mean_squared_error)
+	11367.47s	 = Training   runtime
+	50.15s	 = Validation runtime
+Fitting model: LightGBMLarge_BAG_L2 ... Training model for up to 12146.76s of the 12146.65s of remaining time.
+	Fitting 8 child models (S14F1 - S14F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1389	 = Validation score   (-root_mean_squared_error)
+	408.67s	 = Training   runtime
+	31.03s	 = Validation runtime
+Repeating k-fold bagging: 15/20
+Fitting model: LightGBMXT_BAG_L2 ... Training model for up to 12113.18s of the 12113.06s of remaining time.
+	Fitting 8 child models (S15F1 - S15F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1391	 = Validation score   (-root_mean_squared_error)
+	2436.13s	 = Training   runtime
+	740.87s	 = Validation runtime
+Fitting model: LightGBM_BAG_L2 ... Training model for up to 11914.13s of the 11914.01s of remaining time.
+	Fitting 8 child models (S15F1 - S15F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1389	 = Validation score   (-root_mean_squared_error)
+	400.01s	 = Training   runtime
+	45.45s	 = Validation runtime
+Fitting model: CatBoost_BAG_L2 ... Training model for up to 11882.5s of the 11882.38s of remaining time.
+	Fitting 8 child models (S15F1 - S15F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1393	 = Validation score   (-root_mean_squared_error)
+	655.06s	 = Training   runtime
+	6.0s	 = Validation runtime
+Fitting model: NeuralNetFastAI_BAG_L2 ... Training model for up to 11832.34s of the 11832.23s of remaining time.
+	Fitting 8 child models (S15F1 - S15F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1388	 = Validation score   (-root_mean_squared_error)
+	10951.52s	 = Training   runtime
+	79.28s	 = Validation runtime
+Fitting model: XGBoost_BAG_L2 ... Training model for up to 11101.83s of the 11101.71s of remaining time.
+	Fitting 8 child models (S15F1 - S15F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.139	 = Validation score   (-root_mean_squared_error)
+	212.85s	 = Training   runtime
+	28.29s	 = Validation runtime
+Fitting model: NeuralNetTorch_BAG_L2 ... Training model for up to 11083.2s of the 11083.08s of remaining time.
+	Fitting 8 child models (S15F1 - S15F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1661	 = Validation score   (-root_mean_squared_error)
+	12139.54s	 = Training   runtime
+	53.82s	 = Validation runtime
+Fitting model: LightGBMLarge_BAG_L2 ... Training model for up to 10306.4s of the 10306.28s of remaining time.
+	Fitting 8 child models (S15F1 - S15F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1389	 = Validation score   (-root_mean_squared_error)
+	437.47s	 = Training   runtime
+	33.25s	 = Validation runtime
+Repeating k-fold bagging: 16/20
+Fitting model: LightGBMXT_BAG_L2 ... Training model for up to 10272.44s of the 10272.31s of remaining time.
+	Fitting 8 child models (S16F1 - S16F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1391	 = Validation score   (-root_mean_squared_error)
+	2600.64s	 = Training   runtime
+	793.9s	 = Validation runtime
+Fitting model: LightGBM_BAG_L2 ... Training model for up to 10098.05s of the 10097.92s of remaining time.
+	Fitting 8 child models (S16F1 - S16F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1389	 = Validation score   (-root_mean_squared_error)
+	424.51s	 = Training   runtime
+	47.96s	 = Validation runtime
+Fitting model: CatBoost_BAG_L2 ... Training model for up to 10068.1s of the 10067.97s of remaining time.
+	Fitting 8 child models (S16F1 - S16F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1393	 = Validation score   (-root_mean_squared_error)
+	703.69s	 = Training   runtime
+	6.53s	 = Validation runtime
+Fitting model: NeuralNetFastAI_BAG_L2 ... Training model for up to 10015.25s of the 10015.14s of remaining time.
+	Fitting 8 child models (S16F1 - S16F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1388	 = Validation score   (-root_mean_squared_error)
+	11665.05s	 = Training   runtime
+	84.43s	 = Validation runtime
+Fitting model: XGBoost_BAG_L2 ... Training model for up to 9296.53s of the 9296.41s of remaining time.
+	Fitting 8 child models (S16F1 - S16F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.139	 = Validation score   (-root_mean_squared_error)
+	228.05s	 = Training   runtime
+	30.03s	 = Validation runtime
+Fitting model: NeuralNetTorch_BAG_L2 ... Training model for up to 9229.01s of the 9228.89s of remaining time.
+	Fitting 8 child models (S16F1 - S16F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1663	 = Validation score   (-root_mean_squared_error)
+	13143.54s	 = Training   runtime
+	57.4s	 = Validation runtime
+Fitting model: LightGBMLarge_BAG_L2 ... Training model for up to 8208.7s of the 8208.58s of remaining time.
+	Fitting 8 child models (S16F1 - S16F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1389	 = Validation score   (-root_mean_squared_error)
+	469.59s	 = Training   runtime
+	35.28s	 = Validation runtime
+Repeating k-fold bagging: 17/20
+Fitting model: LightGBMXT_BAG_L2 ... Training model for up to 8139.66s of the 8139.54s of remaining time.
+	Fitting 8 child models (S17F1 - S17F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1391	 = Validation score   (-root_mean_squared_error)
+	2787.91s	 = Training   runtime
+	846.43s	 = Validation runtime
+Fitting model: LightGBM_BAG_L2 ... Training model for up to 7935.83s of the 7935.71s of remaining time.
+	Fitting 8 child models (S17F1 - S17F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1389	 = Validation score   (-root_mean_squared_error)
+	452.14s	 = Training   runtime
+	50.23s	 = Validation runtime
+Fitting model: CatBoost_BAG_L2 ... Training model for up to 7875.16s of the 7875.05s of remaining time.
+	Fitting 8 child models (S17F1 - S17F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1393	 = Validation score   (-root_mean_squared_error)
+	768.42s	 = Training   runtime
+	6.89s	 = Validation runtime
+Fitting model: NeuralNetFastAI_BAG_L2 ... Training model for up to 7804.96s of the 7804.84s of remaining time.
+	Fitting 8 child models (S17F1 - S17F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1388	 = Validation score   (-root_mean_squared_error)
+	12410.55s	 = Training   runtime
+	89.58s	 = Validation runtime
+Fitting model: XGBoost_BAG_L2 ... Training model for up to 7053.69s of the 7053.58s of remaining time.
+	Fitting 8 child models (S17F1 - S17F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.139	 = Validation score   (-root_mean_squared_error)
+	242.72s	 = Training   runtime
+	31.72s	 = Validation runtime
+Fitting model: NeuralNetTorch_BAG_L2 ... Training model for up to 7000.88s of the 7000.77s of remaining time.
+	Fitting 8 child models (S17F1 - S17F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1662	 = Validation score   (-root_mean_squared_error)
+	13999.78s	 = Training   runtime
+	61.0s	 = Validation runtime
+Fitting model: LightGBMLarge_BAG_L2 ... Training model for up to 6139.85s of the 6139.72s of remaining time.
+	Fitting 8 child models (S17F1 - S17F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1389	 = Validation score   (-root_mean_squared_error)
+	502.91s	 = Training   runtime
+	37.42s	 = Validation runtime
+Repeating k-fold bagging: 18/20
+Fitting model: LightGBMXT_BAG_L2 ... Training model for up to 6074.55s of the 6074.43s of remaining time.
+	Fitting 8 child models (S18F1 - S18F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1391	 = Validation score   (-root_mean_squared_error)
+	2941.28s	 = Training   runtime
+	894.04s	 = Validation runtime
+Fitting model: LightGBM_BAG_L2 ... Training model for up to 5907.33s of the 5907.21s of remaining time.
+	Fitting 8 child models (S18F1 - S18F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1389	 = Validation score   (-root_mean_squared_error)
+	480.25s	 = Training   runtime
+	53.27s	 = Validation runtime
+Fitting model: CatBoost_BAG_L2 ... Training model for up to 5850.2s of the 5850.08s of remaining time.
+	Fitting 8 child models (S18F1 - S18F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1393	 = Validation score   (-root_mean_squared_error)
+	822.27s	 = Training   runtime
+	7.41s	 = Validation runtime
+Fitting model: NeuralNetFastAI_BAG_L2 ... Training model for up to 5790.87s of the 5790.76s of remaining time.
+	Fitting 8 child models (S18F1 - S18F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1388	 = Validation score   (-root_mean_squared_error)
+	13138.42s	 = Training   runtime
+	94.83s	 = Validation runtime
+Fitting model: XGBoost_BAG_L2 ... Training model for up to 5057.39s of the 5057.27s of remaining time.
+	Fitting 8 child models (S18F1 - S18F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.139	 = Validation score   (-root_mean_squared_error)
+	256.26s	 = Training   runtime
+	33.69s	 = Validation runtime
+Fitting model: NeuralNetTorch_BAG_L2 ... Training model for up to 5017.13s of the 5017.01s of remaining time.
+	Fitting 8 child models (S18F1 - S18F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1661	 = Validation score   (-root_mean_squared_error)
+	14853.31s	 = Training   runtime
+	64.61s	 = Validation runtime
+Fitting model: LightGBMLarge_BAG_L2 ... Training model for up to 4157.93s of the 4157.82s of remaining time.
+	Fitting 8 child models (S18F1 - S18F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1389	 = Validation score   (-root_mean_squared_error)
+	532.46s	 = Training   runtime
+	39.88s	 = Validation runtime
+Repeating k-fold bagging: 19/20
+Fitting model: LightGBMXT_BAG_L2 ... Training model for up to 4092.88s of the 4092.77s of remaining time.
+	Fitting 8 child models (S19F1 - S19F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1391	 = Validation score   (-root_mean_squared_error)
+	3111.87s	 = Training   runtime
+	940.88s	 = Validation runtime
+Fitting model: LightGBM_BAG_L2 ... Training model for up to 3908.12s of the 3908.0s of remaining time.
+	Fitting 8 child models (S19F1 - S19F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1389	 = Validation score   (-root_mean_squared_error)
+	509.06s	 = Training   runtime
+	55.87s	 = Validation runtime
+Fitting model: CatBoost_BAG_L2 ... Training model for up to 3844.01s of the 3843.89s of remaining time.
+	Fitting 8 child models (S19F1 - S19F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1393	 = Validation score   (-root_mean_squared_error)
+	879.44s	 = Training   runtime
+	8.0s	 = Validation runtime
+Fitting model: NeuralNetFastAI_BAG_L2 ... Training model for up to 3778.45s of the 3778.33s of remaining time.
+	Fitting 8 child models (S19F1 - S19F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1388	 = Validation score   (-root_mean_squared_error)
+	13888.96s	 = Training   runtime
+	100.04s	 = Validation runtime
+Fitting model: XGBoost_BAG_L2 ... Training model for up to 3018.76s of the 3018.64s of remaining time.
+	Fitting 8 child models (S19F1 - S19F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1389	 = Validation score   (-root_mean_squared_error)
+	270.36s	 = Training   runtime
+	35.58s	 = Validation runtime
+Fitting model: NeuralNetTorch_BAG_L2 ... Training model for up to 2965.71s of the 2965.59s of remaining time.
+	Fitting 8 child models (S19F1 - S19F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1661	 = Validation score   (-root_mean_squared_error)
+	15710.51s	 = Training   runtime
+	68.15s	 = Validation runtime
+Fitting model: LightGBMLarge_BAG_L2 ... Training model for up to 2103.65s of the 2103.53s of remaining time.
+	Fitting 8 child models (S19F1 - S19F8) | Fitting with ParallelLocalFoldFittingStrategy
+	-0.1389	 = Validation score   (-root_mean_squared_error)
+	563.12s	 = Training   runtime
+	41.96s	 = Validation runtime
+Completed 19/20 k-fold bagging repeats ...
+Fitting model: WeightedEnsemble_L3 ... Training model for up to 3896.79s of the 2035.91s of remaining time.
+	-0.1387	 = Validation score   (-root_mean_squared_error)
+	10.2s	 = Training   runtime
+	0.01s	 = Validation runtime
+AutoGluon training complete, total runtime = 84375.51s ... Best model: "WeightedEnsemble_L3"
+Automatically performing refit_full as a post-fit operation (due to `.fit(..., refit_full=True)`
+Refitting models via `predictor.refit_full` using all of the data (combined train and validation)...
+	Models trained in this way will have the suffix "_FULL" and have NaN validation score.
+	This process is not bound by time_limit, but should take less time than the original `predictor.fit` call.
+	To learn more, refer to the `.refit_full` method docstring which explains how "_FULL" models differ from normal models.
+Fitting model: KNeighborsUnif_BAG_L1_FULL | Skipping fit via cloning parent ...
+	5.33s	 = Training   runtime
+	296.15s	 = Validation runtime
+Fitting model: KNeighborsDist_BAG_L1_FULL | Skipping fit via cloning parent ...
+	5.38s	 = Training   runtime
+	331.49s	 = Validation runtime
+Fitting 1 L1 models ...
+Fitting model: LightGBMXT_BAG_L1_FULL ...
+	73.7s	 = Training   runtime
+Fitting 1 L1 models ...
+Fitting model: LightGBM_BAG_L1_FULL ...
+	35.69s	 = Training   runtime
+Fitting model: RandomForestMSE_BAG_L1_FULL | Skipping fit via cloning parent ...
+	96.53s	 = Training   runtime
+	29.79s	 = Validation runtime
+Fitting 1 L1 models ...
+Fitting model: CatBoost_BAG_L1_FULL ...
+	156.14s	 = Training   runtime
+Fitting model: ExtraTreesMSE_BAG_L1_FULL | Skipping fit via cloning parent ...
+	37.31s	 = Training   runtime
+	29.23s	 = Validation runtime
+Fitting 1 L1 models ...
+Fitting model: NeuralNetFastAI_BAG_L1_FULL ...
+	Stopping at the best epoch learned earlier - 4.
+	79.26s	 = Training   runtime
+Fitting 1 L1 models ...
+Fitting model: XGBoost_BAG_L1_FULL ...
+	14.05s	 = Training   runtime
+Fitting 1 L1 models ...
+Fitting model: NeuralNetTorch_BAG_L1_FULL ...
+	28.45s	 = Training   runtime
+Fitting 1 L1 models ...
+Fitting model: LightGBMLarge_BAG_L1_FULL ...
+	47.74s	 = Training   runtime
+Fitting model: WeightedEnsemble_L2_FULL | Skipping fit via cloning parent ...
+	11.73s	 = Training   runtime
+Fitting 1 L2 models ...
+Fitting model: LightGBMXT_BAG_L2_FULL ...
+	42.03s	 = Training   runtime
+Fitting 1 L2 models ...
+Fitting model: LightGBM_BAG_L2_FULL ...
+	6.13s	 = Training   runtime
+Fitting model: RandomForestMSE_BAG_L2_FULL | Skipping fit via cloning parent ...
+	321.65s	 = Training   runtime
+	42.59s	 = Validation runtime
+Fitting 1 L2 models ...
+Fitting model: CatBoost_BAG_L2_FULL ...
+	34.53s	 = Training   runtime
+Fitting model: ExtraTreesMSE_BAG_L2_FULL | Skipping fit via cloning parent ...
+	92.06s	 = Training   runtime
+	31.98s	 = Validation runtime
+Fitting 1 L2 models ...
+Fitting model: NeuralNetFastAI_BAG_L2_FULL ...
+	Stopping at the best epoch learned earlier - 23.
+	376.87s	 = Training   runtime
+Fitting 1 L2 models ...
+Fitting model: XGBoost_BAG_L2_FULL ...
+	3.51s	 = Training   runtime
+Fitting 1 L2 models ...
+Fitting model: NeuralNetTorch_BAG_L2_FULL ...
+	34.8s	 = Training   runtime
+Fitting 1 L2 models ...
+Fitting model: LightGBMLarge_BAG_L2_FULL ...
+	7.17s	 = Training   runtime
+Fitting model: WeightedEnsemble_L3_FULL | Skipping fit via cloning parent ...
+	10.2s	 = Training   runtime
+Refit complete, total runtime = 1133.09s
+TabularPredictor saved. To load, use: predictor = TabularPredictor.load("AutogluonModels/ag-20230328_091825/")
+Loaded data from: /home2/hky/github/Gamma_Energy/AllSky/MC_test_AllSky_Data_transformed.csv | Columns = 12 / 12 | Rows = 762736 -> 762736
