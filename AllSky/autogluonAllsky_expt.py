@@ -27,7 +27,7 @@ data["deltaphi"][data["deltaphi"] < -180] += 360
 data["deltaphi"][data["deltaphi"] > 180] -= 360
 
 
-for if_cut in [0, 1]:
+for if_cut in [1]:
     if if_cut:
         cuted = np.where((data["theta"] < 50) & (data["nch"] >= 16)
                          & (data["inout"] == 1) & (data['sigma'] < 1.)
@@ -39,17 +39,17 @@ for if_cut in [0, 1]:
         cuted = np.where(data["inout"] == 1)
 
     train_index, test_index = train_test_split(
-        range(cuted[0].shape[0]), test_size=0.3, random_state=42, shuffle=True)
+        range(cuted[0].shape[0]), test_size=0.1, random_state=42, shuffle=True)
 
     data_train = {key: data[key][cuted][train_index] for key in data.keys()}
     data_test = {key: data[key][cuted][test_index] for key in data.keys()}
 
     pd_data = pd.DataFrame(data_train)
     pd_data_test = pd.DataFrame(data_test)
-    pd_data[["sumpf"]] = np.log10(pd_data[["sumpf"]])
-    pd_data_test[["sumpf"]] = np.log10(pd_data_test[["sumpf"]])
+    pd_data[["ne", "sumpf"]] = np.log10(pd_data[["ne", "sumpf"]])
+    # pd_data_test[["sumpf"]] = np.log10(pd_data_test[["sumpf"]])
     train_data_autogluon = TabularDataset(pd_data)
-    test_data_autogluon = TabularDataset(pd_data_test)
+    # test_data_autogluon = TabularDataset(pd_data_test)
 
     for label in [
             "log10Energy",
@@ -57,7 +57,7 @@ for if_cut in [0, 1]:
             "deltaphi"
     ]:
         columns_need = [label, "nch", "theta", "phi", "sigma",
-                        "cx", "cy", "sumpf", "summd", "mr1"]
+                        "cx", "cy", "sumpf", "summd", "mr1", "ne", "age", "S50"]
 
         columns_drop = list()
         for column in train_data_autogluon.columns:

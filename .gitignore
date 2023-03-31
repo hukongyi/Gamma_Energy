@@ -12,6 +12,7 @@ __pycache__/
 # Distribution / packaging
 .Python
 MCdata/
+J1857/
 AutogluonModels/
 log10Energy/
 prediction-MC_Energy-2023_03_16T19_25_55_531Z/
