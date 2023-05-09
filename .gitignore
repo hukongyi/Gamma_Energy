@@ -1,4 +1,6 @@
 # Byte-compiled / optimized / DLL files
+fig/
+agmodel/
 __pycache__/
 Crab/
 Data/

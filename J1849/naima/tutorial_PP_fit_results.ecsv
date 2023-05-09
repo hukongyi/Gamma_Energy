@@ -1,0 +1,26 @@
+# %ECSV 1.0
+# ---
+# datatype:
+# - {name: label, datatype: string, description: Name of the parameter}
+# - {name: median, datatype: float64, description: Median of the posterior distribution function}
+# - {name: unc_lo, datatype: float64, description: 'Difference between the median and the 16th percentile of the pdf, ~1sigma lower uncertainty'}
+# - {name: unc_hi, datatype: float64, description: 'Difference between the 84th percentile and the median of the pdf, ~1sigma upper uncertainty'}
+# meta: !!omap
+# - {n_samples: 32000}
+# - ML_pars: [3.9075671984057876, 1.8704395295701777, 3.1713841945349963]
+# - {MaxLogLikelihood: -4.550112043506021}
+# - {BIC: 17.224374690318673}
+# - {n_walkers: 32}
+# - {n_burn: 200}
+# - p0: [4.442053404809976, 2.0, 3.54]
+# - {guess: true}
+# - p0_burn_median: [3.883551745753038, 1.9244806558950787, 3.2988299810403974]
+# - {n_run: 1000}
+# schema: astropy-2.0
+label median unc_lo unc_hi
+log10(norm) 3.8991029906495243 0.13141834786562745 0.09739757950777106
+norm 7926.892902839143 2069.7658778502773 1992.853513940834
+index 1.9010655372735665 0.214167445975308 0.14887826155811812
+log10(cutoff) 3.2554957836683465 0.3957816394055027 0.6599749863280757
+cutoff 1800.9256501380664 1076.9663621066386 6430.418693336145
+blob1 nan nan nan
