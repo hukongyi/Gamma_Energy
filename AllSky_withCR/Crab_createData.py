@@ -63,70 +63,34 @@ test_size = 0.4
 # for key in paralist_Expt:
 #     CRdata[key] = np.concatenate([CRdata[key], CrabData[key]])
 
-data = np.load(
-    "/home2/hky/github/Gamma_Energy/Exptdata/mergedData_eqzenith_mdcut.npz"
-)
+data = np.load("/home2/hky/github/Gamma_Energy/Exptdata/mergedData_eqzenith_mdcut.npz")
+
 data = {key: data[key] for key in data}
-data["isgamma"][
-    np.where(
-        (data["Dec"] < 22.5)
-        & (data["Dec"] > 21.5)
-        & (data["Ra"] < 84.1)
-        & (data["Ra"] > 83.1)
-    )
-]=1
-data["isgamma"][
-    np.where(
-        (data["Dec"] < 37)
-        & (data["Dec"] > 36)
-        & (data["Ra"] < 305.25)
-        & (data["Ra"] > 304.25)
-    )
-]=1
-data["isgamma"][
-    np.where(
-        (data["Dec"] < 61.5)
-        & (data["Dec"] > 60.5)
-        & (data["Ra"] < 337.25)
-        & (data["Ra"] > 336.25)
-    )
-]=1
-data["isgamma"][
-    np.where(
-        (data["Dec"] < 6.5)
-        & (data["Dec"] > 5.5)
-        & (data["Ra"] < 287.5)
-        & (data["Ra"] > 286.5)
-    )
-]=1
-data["isgamma"][
-    np.where(
-        (data["Dec"] < 41.5)
-        & (data["Dec"] > 40.5)
-        & (data["Ra"] < 308.25)
-        & (data["Ra"] > 307.25)
-    )
-]=1
-data["isgamma"][
-    np.where(
-        (data["Dec"] < -12.5)
-        & (data["Dec"] > -14)
-        & (data["Ra"] < 277)
-        & (data["Ra"] > 276)
-    )
-]=1
+rate2 = 0.14
+rate1 = 0.3
+data["summdnew"] = (
+    data["summd"]
+    * (rate1 + (data["mjd"] - 56710) / (57893 - 56710) * (1 - rate1))
+    * (1 - (data["summd"]) * rate2)
+)
+data_cuted = np.where(
+    (data["summdnew"] < 5.1e-3 * data["sumpf"] ** 1.2) | (data["summdnew"] < 0.4)
+)
+data = {key: data[key][data_cuted] for key in data.keys()}
+
 # data["isgamma"] = np.where((data["Ra"] < 84.1) & (data["Ra"] > 83.1), 1, 0)
 train_index, test_index = train_test_split(
     range(len(data["nch"])), test_size=test_size, random_state=42
 )
-CRdata_train = {key: data[key][train_index] for key in data}
-CRdata_test = {key: data[key][test_index] for key in data}
+CRdata_train = {key: data[key][train_index] for key in data.keys()}
+CRdata_test = {key: data[key][test_index] for key in data.keys()}
 np.savez(
-    "/home2/hky/github/Gamma_Energy/AllSky_withCR/Data/Crab_Dec_train_mulitysource.npz",
+    "/home2/hky/github/Gamma_Energy/AllSky_withCR/Data/Crab_Dec_train_mulitysource_newsummd.npz",
     **CRdata_train
 )
 np.savez(
-    "/home2/hky/github/Gamma_Energy/AllSky_withCR/Data/Crab_Dec_test_mulitysource.npz", **CRdata_test
+    "/home2/hky/github/Gamma_Energy/AllSky_withCR/Data/Crab_Dec_test_mulitysource_newsummd.npz",
+    **CRdata_test
 )
 # CRdata["isgamma"] = np.zeros_like(CRdata["nch"])
 

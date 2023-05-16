@@ -81,36 +81,37 @@ predictor_gamma_CR = TabularPredictor.load(
 )
 
 if __name__ == "__main__":
-    for para_num in [7, 4, 5, 6]:
-        print(para_num)
-        predictor_gamma_CR = TabularPredictor.load(
-            f"/home2/hky/github/Gamma_Energy/AllSky_withCR/agmodel/identitfy_gamma_CR_{para_num}par/"
+    # for para_num in [7, 4, 5, 6]:
+    #     print(para_num)
+        # predictor_gamma_CR = TabularPredictor.load(
+        #     f"/home2/hky/github/Gamma_Energy/AllSky_withCR/agmodel/identitfy_gamma_CR_{para_num}par/"
+        # )
+    SavePath = f"/home2/hky/github/Gamma_Energy/Exptdata/J1857Cut_23_05_14"
+
+    datalist = list()
+    for root, dirs, files in os.walk(DataPath):
+        for name in files:
+            filename = os.path.join(root, name)
+            datalist.append(filename)
+
+    for filename in datalist:
+        savefilename = getsavefilename(SavePath, filename)
+        if os.path.exists(savefilename):
+            continue
+        outputpath_, _ = os.path.split(savefilename)
+        mkdir(outputpath_)
+        
+        Exptdata = np.load(filename)
+        Exptdatacut = np.where(
+            (Exptdata["summd"] < 6.3e-4 * Exptdata["sumpf"] ** 1.6)
+            | (Exptdata["summd"] < 0.4)
         )
-        SavePath = f"/home2/hky/github/Gamma_Energy/Exptdata/crabCut_23_05_07_withisgamma_Allsky_{para_num}par"
-
-        datalist = list()
-        for root, dirs, files in os.walk(DataPath):
-            for name in files:
-                filename = os.path.join(root, name)
-                datalist.append(filename)
-
-        for filename in datalist:
-            savefilename = getsavefilename(SavePath, filename)
-            if os.path.exists(savefilename):
-                continue
-            outputpath_, _ = os.path.split(savefilename)
-            mkdir(outputpath_)
-            Exptdata = np.load(filename)
-            Exptdatacut = np.where(
-                (Exptdata["summd"] < 3.1e-3 * Exptdata["sumpf"] ** 1.2)
-                | (Exptdata["summd"] < 0.4)
-            )
-            Exptdata = {key: Exptdata[key][Exptdatacut] for key in Exptdata}
-            Exptdata_df = pd.DataFrame(Exptdata)
-            Exptdata["isgamma"] = predictor_gamma_CR.predict_proba(Exptdata_df)[
-                1
-            ].to_numpy()
-            np.savez(
-                savefilename,
-                **Exptdata,
-            )
+        Exptdata = {key: Exptdata[key][Exptdatacut] for key in Exptdata}
+        # Exptdata_df = pd.DataFrame(Exptdata)
+        # Exptdata["isgamma"] = predictor_gamma_CR.predict_proba(Exptdata_df)[
+        #     1
+        # ].to_numpy()
+        np.savez(
+            savefilename,
+            **Exptdata,
+        )

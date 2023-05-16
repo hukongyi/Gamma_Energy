@@ -55,21 +55,37 @@ for root, dirs, files in os.walk(
     for name in files:
         datalist.append(os.path.join(root, name))
 
-sample_num = 1000
-for path in random.sample(datalist, sample_num):
-    print(path)
+# sumpfmin = np.array([30,100, 200, 400, 800, 1000, 2000])
+# count1 = np.zeros_like(sumpfmin)
+# count2 = np.zeros_like(sumpfmin)
+sample_num = 2000
+count = 0
+for path in random.sample(datalist,sample_num):
     Exptdata = np.load(path)
+        
+    Exptdata_cut = np.where(
+        (Exptdata["summd"] < 0.4)
+        | (Exptdata["summd"] < 5.1e-3 * Exptdata["sumpf"] ** 1.2)
+    )
+
     for key in paralist_Expt:
-        AllskyData[key].append(Exptdata[key])
+        AllskyData[key].append(Exptdata[key][Exptdata_cut])
 for key in paralist_Expt:
     AllskyData[key] = np.concatenate(AllskyData[key])
+# # for path in random.sample(datalist, sample_num):
+# #     print(path)
+# #     Exptdata = np.load(path)
+# #     for key in paralist_Expt:
+# #         AllskyData[key].append(Exptdata[key])
+# # for key in paralist_Expt:
+# #     AllskyData[key] = np.concatenate(AllskyData[key])
 
 np.savez(
-    f"/home2/hky/github/Gamma_Energy/AllSky_withCR/Data/Data_{sample_num},npz",
+    f"/home2/hky/github/Gamma_Energy/AllSky_withCR/Data/Data_{sample_num}_random.npz",
     **AllskyData,
 )
 AllskyData = np.load(
-    f"/home2/hky/github/Gamma_Energy/AllSky_withCR/Data/Data_{sample_num}.npz"
+    f"/home2/hky/github/Gamma_Energy/AllSky_withCR/Data/Data_{sample_num}_random.npz"
 )
 
 AllskyData = {key: AllskyData[key] for key in AllskyData}
@@ -99,6 +115,6 @@ if __name__ == "__main__":
     pool.join()
 
     np.savez(
-        f"/home2/hky/github/Gamma_Energy/AllSky_withCR/Data/Datawithe_Galactic_{sample_num}.npz",
+        f"/home2/hky/github/Gamma_Energy/AllSky_withCR/Data/Datawithe_Galactic_{sample_num}_random.npz",
         **AllskyData,
     )

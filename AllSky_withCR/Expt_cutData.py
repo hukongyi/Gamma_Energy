@@ -12,7 +12,7 @@ import time
 
 from CorrdinateTransform import corrdinateYBJ
 
-DataPath = "/home2/hky/github/Gamma_Energy/Exptdata/crabCut_23_05_01"
+DataPath = "/home2/hky/github/Gamma_Energy/Exptdata/J1857Cut_23_05_14"
 
 
 def mkdir(path):
@@ -38,7 +38,7 @@ columns_need = [
 
 
 if __name__ == "__main__":
-    SavePath = "/home2/hky/github/Gamma_Energy/Exptdata/CrabCut_23_05_07_summdcut/cutedData.npz"
+    SavePath = "/home2/hky/github/Gamma_Energy/Exptdata/J1857Cut_23_05_14/cutedData.npz"
 
     datalist = list()
     Exptdata = dict()
@@ -51,12 +51,12 @@ if __name__ == "__main__":
 
     for filename in datalist:
         Exptdatatmp = np.load(filename)
-        Exptdatacut = np.where(
-            (Exptdatatmp["summd"] < 5.1e-3 * Exptdatatmp["sumpf"] ** 1.2)
-            | (Exptdatatmp["summd"] < 0.4)
-        )
+        # Exptdatacut = np.where(
+        #     (Exptdatatmp["summd"] < 5.1e-3 * Exptdatatmp["sumpf"] ** 1.2)
+        #     | (Exptdatatmp["summd"] < 0.4)
+        # )
         for key in Exptdatatmp:
-            Exptdata[key].append(Exptdatatmp[key][Exptdatacut])
+            Exptdata[key].append(Exptdatatmp[key])
 
     for key in Exptdata.keys():
         Exptdata[key] = np.concatenate(Exptdata[key])

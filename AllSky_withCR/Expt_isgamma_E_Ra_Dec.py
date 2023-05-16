@@ -23,13 +23,16 @@ def getRaDecOff(i, shared_array, order):
         Ra, Dec = corrdinateYBJ(
             theta,
             phi
-            + (-1) ** (i + 1) * (2 * Interval + Interval * int(i / 2)) / np.sin(theta),
+            + (-1) ** (i + 1)
+            * (2 * Interval + Interval * int(i / 2))
+            / np.sin(np.deg2rad(theta)),
             mjd,
         )
     return [i, order, Ra, Dec]
 
 
 def RaDecCallback(result):
+    pbar.update(1)
     i = result[0]
     order = result[1]
     Ra = result[2]
@@ -40,59 +43,57 @@ def RaDecCallback(result):
         Exptdata[f"RaOff_{i}"][order], Exptdata[f"DecOff_{i}"][order] = Ra, Dec
 
 
-DataPath = (
-    "/home2/hky/github/Gamma_Energy/Exptdata/CrabCut_23_05_07_summdcut/cutedData.npz"
-)
+# DataPath = "/home2/hky/github/Gamma_Energy/Exptdata/J1857Cut_23_05_14/cutedData.npz"
 
-SavePath1 = (
-    "/home2/hky/github/Gamma_Energy/Exptdata/CrabCut_23_05_07_summdcut/cutedData_E.npz"
-)
+SavePath1 = "/home2/hky/github/Gamma_Energy/Exptdata/J1857Cut_23_05_14/cutedData_E.npz"
 
-SavePath2 = "/home2/hky/github/Gamma_Energy/Exptdata/CrabCut_23_05_07_summdcut/cutedData_E_isgamma.npz"
-SavePath3 = "/home2/hky/github/Gamma_Energy/Exptdata/CrabCut_23_05_07_summdcut/cutedData_E_isgamma_RaDec.npz"
-Exptdata = np.load(DataPath)
-Exptdata = {key: Exptdata[key] for key in Exptdata}
-predictor_energy = TabularPredictor.load(
-    "/home2/hky/github/Gamma_Energy/AllSky/AutogluonModels/agModels_angle_ifcut=0/log10Energy"
-)
-predictor_deltatheta = TabularPredictor.load(
-    "/home2/hky/github/Gamma_Energy/AllSky/AutogluonModels/agModels_angle_ifcut=0/deltatheta"
-)
-predictor_deltaphi = TabularPredictor.load(
-    "/home2/hky/github/Gamma_Energy/AllSky/AutogluonModels/agModels_angle_ifcut=0/deltaphi"
-)
-Exptdata_df = pd.DataFrame(Exptdata)
-Exptdata_df["sumpf"] = np.log10(Exptdata_df["sumpf"])
-print("energy")
-Exptdata["energy"] = 10 ** predictor_energy.predict(Exptdata_df).to_numpy()
-Exptdata["newtheta"] = (
-    Exptdata["theta"] - predictor_deltatheta.predict(Exptdata_df).to_numpy()
-)
+# # SavePath2 = "/home2/hky/github/Gamma_Energy/Exptdata/CrabCut_23_05_07_summdcut/cutedData_E_isgamma.npz"
+SavePath3 = "/home2/hky/github/Gamma_Energy/Exptdata/J1857Cut_23_05_14//cutedData_E_RaDec.npz"
+Exptdata = np.load(SavePath1)
+Exptdata = {key: Exptdata[key] for key in ["newtheta","newphi","mjd"]}
+# predictor_energy = TabularPredictor.load(
+#     "/home2/hky/github/Gamma_Energy/AllSky/AutogluonModels/agModels_angle_ifcut=0/log10Energy"
+# )
+# predictor_deltatheta = TabularPredictor.load(
+#     "/home2/hky/github/Gamma_Energy/AllSky/AutogluonModels/agModels_angle_ifcut=0/deltatheta"
+# )
+# predictor_deltaphi = TabularPredictor.load(
+#     "/home2/hky/github/Gamma_Energy/AllSky/AutogluonModels/agModels_angle_ifcut=0/deltaphi"
+# )
+# Exptdata_df = pd.DataFrame(Exptdata)
+# Exptdata_df["sumpf"] = np.log10(Exptdata_df["sumpf"])
+# print("energy")
+# Exptdata["energy"] = 10 ** predictor_energy.predict(Exptdata_df).to_numpy()
+# print("newtheta")
+# Exptdata["newtheta"] = (
+#     Exptdata["theta"] - predictor_deltatheta.predict(Exptdata_df).to_numpy()
+# )
 
-print("newtheta")
-Exptdata["newphi"] = (
-    Exptdata["phi"] - predictor_deltaphi.predict(Exptdata_df).to_numpy()
-)
+# print("newphi")
+# Exptdata["newphi"] = (
+#     Exptdata["phi"] - predictor_deltaphi.predict(Exptdata_df).to_numpy()
+# )
 
-print("newphi")
-Exptdata["newtheta"][Exptdata["newtheta"] < 0] = 0.01
-np.savez(
-    SavePath1,
-    **Exptdata,
-)
-Exptdata_df = pd.DataFrame(Exptdata)
+# Exptdata["newtheta"][Exptdata["newtheta"] < 0] = 0.01
+# np.savez(
+#     SavePath1,
+#     **Exptdata,
+# )
+# Exptdata_df = pd.DataFrame(Exptdata)
 
-for para_num in [7, 6, 5, 4]:
-    print(para_num)
-    predictor_gamma_CR = TabularPredictor.load(
-        f"/home2/hky/github/Gamma_Energy/AllSky_withCR/agmodel/identitfy_gamma_CR_{para_num}par/"
-    )
-    Exptdata[f"isgamma_{para_num}"] = predictor_gamma_CR.predict(Exptdata_df).to_numpy()
+# for para_num in [7, 6, 5, 4]:
+#     print(para_num)
+#     predictor_gamma_CR = TabularPredictor.load(
+#         f"/home2/hky/github/Gamma_Energy/AllSky_withCR/agmodel/identitfy_gamma_CR_{para_num}par/"
+#     )
+#     Exptdata[f"isgamma_{para_num}"] = predictor_gamma_CR.predict(Exptdata_df).to_numpy()
 
-np.savez(
-    SavePath2,
-    **Exptdata,
-)
+# np.savez(
+#     SavePath2,
+#     **Exptdata,
+# )
+pbar = tqdm(total=math.ceil(len(Exptdata["newtheta"]) / 3e4) * 21)
+
 shared_array_base = multiprocessing.Array(
     ctypes.c_double, 3 * len(Exptdata["newtheta"])
 )
