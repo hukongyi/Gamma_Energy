@@ -76,9 +76,9 @@ columns_need = [
 # predictor_deltaphi = TabularPredictor.load(
 #     "/home2/hky/github/Gamma_Energy/AllSky/AutogluonModels/agModels_angle_ifcut=0/deltaphi"
 # )
-predictor_gamma_CR = TabularPredictor.load(
-    "/home2/hky/github/Gamma_Energy/AllSky_withCR/agmodel/identitfy_gamma_CR_Allsky_AllExpt_11par/"
-)
+# predictor_gamma_CR = TabularPredictor.load(
+#     "/home2/hky/github/Gamma_Energy/AllSky_withCR/agmodel/identitfy_gamma_CR_Allsky_AllExpt_11par/"
+# )
 
 if __name__ == "__main__":
     # for para_num in [7, 4, 5, 6]:
@@ -86,7 +86,7 @@ if __name__ == "__main__":
         # predictor_gamma_CR = TabularPredictor.load(
         #     f"/home2/hky/github/Gamma_Energy/AllSky_withCR/agmodel/identitfy_gamma_CR_{para_num}par/"
         # )
-    SavePath = f"/home2/hky/github/Gamma_Energy/Exptdata/J1857Cut_23_05_14"
+    SavePath = f"/home2/hky/github/Gamma_Energy/Exptdata/ALLsky_23_05_17"
 
     datalist = list()
     for root, dirs, files in os.walk(DataPath):
@@ -100,10 +100,9 @@ if __name__ == "__main__":
             continue
         outputpath_, _ = os.path.split(savefilename)
         mkdir(outputpath_)
-        
         Exptdata = np.load(filename)
         Exptdatacut = np.where(
-            (Exptdata["summd"] < 6.3e-4 * Exptdata["sumpf"] ** 1.6)
+            (Exptdata["summd"] < 1.2e-3 * Exptdata["sumpf"] ** 1.6)
             | (Exptdata["summd"] < 0.4)
         )
         Exptdata = {key: Exptdata[key][Exptdatacut] for key in Exptdata}

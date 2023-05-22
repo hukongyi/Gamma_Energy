@@ -12,7 +12,7 @@ import time
 
 from CorrdinateTransform import corrdinateYBJ
 
-DataPath = "/home2/hky/github/Gamma_Energy/Exptdata/J1857Cut_23_05_14"
+DataPath = "/home2/hky/github/Gamma_Energy/Exptdata/ALLsky_23_05_17"
 
 
 def mkdir(path):
@@ -38,7 +38,7 @@ columns_need = [
 
 
 if __name__ == "__main__":
-    SavePath = "/home2/hky/github/Gamma_Energy/Exptdata/J1857Cut_23_05_14/cutedData.npz"
+    SavePath = "/home2/hky/github/Gamma_Energy/Exptdata/ALLsky_23_05_17/cutedData.npz"
 
     datalist = list()
     Exptdata = dict()

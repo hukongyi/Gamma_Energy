@@ -43,14 +43,36 @@ def RaDecCallback(result):
         Exptdata[f"RaOff_{i}"][order], Exptdata[f"DecOff_{i}"][order] = Ra, Dec
 
 
-# DataPath = "/home2/hky/github/Gamma_Energy/Exptdata/J1857Cut_23_05_14/cutedData.npz"
+DataPath = "/home2/hky/github/Gamma_Energy/Exptdata/ALLsky_23_05_17/cutedData.npz"
+SavePath1 = (
+    "/home2/hky/github/Gamma_Energy/Exptdata/ALLsky_23_05_17/cutedData_isgamma.npz"
+)
+# SavePath2 = (
+#     "/home2/hky/github/Gamma_Energy/Exptdata/ALLsky_23_05_17/cutedData_E_isgamma.npz"
+# )
+# SavePath3 = (
+#     "/home2/hky/github/Gamma_Energy/Exptdata/ALLsky_23_05_17/cutedData_E_RaDec.npz"
+# )
+# Exptdata = np.load(DataPath)
+# Exptdata = {key: Exptdata[key] for key in Exptdata}
+# predictor_isgamma = TabularPredictor.load(
+#     "/home2/hky/github/Gamma_Energy/AllSky_withCR/agmodel/identitfy_gamma_CR_Allsky_MC_5par_random_2/"
+# )
+# Exptdata_df = pd.DataFrame(Exptdata)
+# Exptdata["isgamma"] = predictor_isgamma.predict_proba(pd.DataFrame(Exptdata_df))[
+#     1
+# ].to_numpy()
 
-SavePath1 = "/home2/hky/github/Gamma_Energy/Exptdata/J1857Cut_23_05_14/cutedData_E.npz"
-
-# # SavePath2 = "/home2/hky/github/Gamma_Energy/Exptdata/CrabCut_23_05_07_summdcut/cutedData_E_isgamma.npz"
-SavePath3 = "/home2/hky/github/Gamma_Energy/Exptdata/J1857Cut_23_05_14//cutedData_E_RaDec.npz"
+# np.savez(
+#     SavePath1,
+#     **Exptdata,
+# )
 Exptdata = np.load(SavePath1)
-Exptdata = {key: Exptdata[key] for key in ["newtheta","newphi","mjd"]}
+Exptdata = {key: Exptdata[key] for key in Exptdata}
+
+P_value = np.array([0.36, 0.44, 0.55, 0.74, 0.91, 0.98, 0.99])
+
+
 # predictor_energy = TabularPredictor.load(
 #     "/home2/hky/github/Gamma_Energy/AllSky/AutogluonModels/agModels_angle_ifcut=0/log10Energy"
 # )
@@ -60,6 +82,8 @@ Exptdata = {key: Exptdata[key] for key in ["newtheta","newphi","mjd"]}
 # predictor_deltaphi = TabularPredictor.load(
 #     "/home2/hky/github/Gamma_Energy/AllSky/AutogluonModels/agModels_angle_ifcut=0/deltaphi"
 # )
+
+
 # Exptdata_df = pd.DataFrame(Exptdata)
 # Exptdata_df["sumpf"] = np.log10(Exptdata_df["sumpf"])
 # print("energy")
@@ -92,38 +116,38 @@ Exptdata = {key: Exptdata[key] for key in ["newtheta","newphi","mjd"]}
 #     SavePath2,
 #     **Exptdata,
 # )
-pbar = tqdm(total=math.ceil(len(Exptdata["newtheta"]) / 3e4) * 21)
+# pbar = tqdm(total=math.ceil(len(Exptdata["newtheta"]) / 3e4) * 21)
 
-shared_array_base = multiprocessing.Array(
-    ctypes.c_double, 3 * len(Exptdata["newtheta"])
-)
-Exptdata["Ra"] = np.zeros_like(Exptdata["newtheta"])
-Exptdata["Dec"] = np.zeros_like(Exptdata["newtheta"])
-for i in range(20):
-    Exptdata[f"RaOff_{i}"] = np.zeros_like(Exptdata["newtheta"])
-    Exptdata[f"DecOff_{i}"] = np.zeros_like(Exptdata["newtheta"])
+# shared_array_base = multiprocessing.Array(
+#     ctypes.c_double, 3 * len(Exptdata["newtheta"])
+# )
+# Exptdata["Ra"] = np.zeros_like(Exptdata["newtheta"])
+# Exptdata["Dec"] = np.zeros_like(Exptdata["newtheta"])
+# for i in range(20):
+#     Exptdata[f"RaOff_{i}"] = np.zeros_like(Exptdata["newtheta"])
+#     Exptdata[f"DecOff_{i}"] = np.zeros_like(Exptdata["newtheta"])
 
-shared_array = np.ctypeslib.as_array(shared_array_base.get_obj())
-shared_array = shared_array.reshape(3, len(Exptdata["newtheta"]))
-shared_array[0, :] = Exptdata["newtheta"][:]
-shared_array[1, :] = Exptdata["newphi"][:]
-shared_array[2, :] = Exptdata["mjd"][:]
-order = np.array_split(
-    np.arange(len(Exptdata["newtheta"])), math.ceil(len(Exptdata["newtheta"]) / 3e4)
-)
-if __name__ == "__main__":
-    pool = multiprocessing.Pool(processes=20)
+# shared_array = np.ctypeslib.as_array(shared_array_base.get_obj())
+# shared_array = shared_array.reshape(3, len(Exptdata["newtheta"]))
+# shared_array[0, :] = Exptdata["newtheta"][:]
+# shared_array[1, :] = Exptdata["newphi"][:]
+# shared_array[2, :] = Exptdata["mjd"][:]
+# order = np.array_split(
+#     np.arange(len(Exptdata["newtheta"])), math.ceil(len(Exptdata["newtheta"]) / 3e4)
+# )
+# if __name__ == "__main__":
+#     pool = multiprocessing.Pool(processes=20)
 
-    for i in range(21):
-        for order_tmp in order:
-            pool.apply_async(
-                getRaDecOff,
-                args=(i, shared_array[:, order_tmp], order_tmp),
-                callback=RaDecCallback,
-            )
-    pool.close()
-    pool.join()
-    np.savez(
-        SavePath3,
-        **Exptdata,
-    )
+#     for i in range(21):
+#         for order_tmp in order:
+#             pool.apply_async(
+#                 getRaDecOff,
+#                 args=(i, shared_array[:, order_tmp], order_tmp),
+#                 callback=RaDecCallback,
+#             )
+#     pool.close()
+#     pool.join()
+#     np.savez(
+#         SavePath3,
+#         **Exptdata,
+#     )
