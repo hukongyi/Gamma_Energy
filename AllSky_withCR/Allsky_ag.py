@@ -47,7 +47,7 @@ columns_need = [
     "cy",
     "sumpf",
     "summd",
-    # "mr1",
+    "mr1",
     # "ne",
     # "age",
     # "S50",
@@ -59,7 +59,7 @@ train_data = pd.DataFrame({key: train_data[key] for key in columns_need})
 # train_data["cy"] = np.abs(train_data["cy"])
 predictor = TabularPredictor(
     label=label,
-    path="/home2/hky/github/Gamma_Energy/AllSky_withCR/agmodel/identitfy_gamma_CR_Allsky_MC_5par_random_2",
+    path="/home2/hky/github/Gamma_Energy/AllSky_withCR/agmodel/identitfy_gamma_CR_Allsky_MC_6par_random_mr1",
     eval_metric="roc_auc",
 ).fit(train_data, num_cpus=40, num_gpus=2)
 
