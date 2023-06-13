@@ -15,6 +15,7 @@ Data/
 *.out
 # Distribution / packaging
 .Python
+autogloun_model/
 MCdata/
 J1857/
 AutogluonModels/
