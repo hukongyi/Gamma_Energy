@@ -3,5 +3,8 @@
     "python.linting.flake8Args": [
         "--max-line-length=248"
     ],
-    "python.analysis.typeCheckingMode": "off"
+    "python.analysis.typeCheckingMode": "off",
+    "files.watcherExclude": {
+        "**": true
+    }
 }
