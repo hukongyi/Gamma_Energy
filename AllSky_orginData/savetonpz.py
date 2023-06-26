@@ -187,6 +187,7 @@ def getMCcutNumber(MCpath):
         [
             "nch",
             "inout",
+            "oldtrig",
             "theta",
             "phi",
             "sigma",
@@ -216,9 +217,11 @@ def getMCcutNumber(MCpath):
 
 
 if __name__ == "__main__":
-    originpath = "/home2/chenxu/data/gamma_allsky.gz"
-    MCpath = "/home2/chenxu/data/gamma_all.root"
+    originpath = "/home2/chenxu/data/MCmodelBany4.gz"
+#     originpath = "/home2/chenxu/data/gamma_allsky.gz"
+#     MCpath = "/home2/chenxu/data/gamma_all.root"
+    MCpath = "/home2/chenxu/data/MCmodelBany4_all.root"
     savepath = "/home2/hky/github/Gamma_Energy/AllSky_orginData/Data/"
-    savename = "gamma_allsky"
+    savename = "Comsic_allsky.npz"
     MCnumber, MCdata = getMCcutNumber(MCpath)
     savetonpz(originpath, savepath, savename, MCnumber, MCdata)
