@@ -13,6 +13,11 @@ Data/
 *.npy
 *.npz
 *.out
+*.pkl
+*.json
+*.tar.gz
+__version__
+xgb.ubj
 # Distribution / packaging
 .Python
 autogloun_model/
